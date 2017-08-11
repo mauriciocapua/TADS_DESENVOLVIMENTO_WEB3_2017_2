@@ -1,0 +1,1303 @@
+!SESSION 2017-07-31 19:34:43.375 -----------------------------------------------
+eclipse.buildId=4.7.0.I20170612-0950
+java.version=1.8.0_131
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pt_BR
+Framework arguments:  -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -data D:\Meus Documentos\Ifrs\5º semestre\WEB3\workspace -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-07-31 19:34:56.576
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Mauricio Capua'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 17 2017-07-31 19:34:59.468
+!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: Connect to dev.eclipse.org:443 [dev.eclipse.org/198.41.30.200] failed: connect timed out. ; version: 2.0.5.v20170613-1207
+!STACK 0
+org.apache.http.conn.ConnectTimeoutException: Connect to dev.eclipse.org:443 [dev.eclipse.org/198.41.30.200] failed: connect timed out
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:150)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.http.client.fluent.Request.internalExecute(Request.java:173)
+	at org.apache.http.client.fluent.Executor.execute(Executor.java:262)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.request(IO.java:170)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:64)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:124)
+	at com.google.common.util.concurrent.AbstractIdleService$DelegateService$1.run(AbstractIdleService.java:62)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:122)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:337)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:141)
+	... 17 more
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2017-07-31 19:40:05.521
+!MESSAGE Connection to http://master.dl.sourceforge.net/project/sapnweclipse/updates/site.xml failed on Connection timed out: connect. Retry attempt 0 started
+!STACK 0
+java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.eclipse.ecf.internal.provider.filetransfer.httpclient4.ECFHttpClientProtocolSocketFactory.connectSocket(ECFHttpClientProtocolSocketFactory.java:86)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:179)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1084)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1075)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1071)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2017-07-31 19:41:03.802
+!MESSAGE Connection to http://public.dhe.ibm.com/ibmdl/export/pub/software/websphere/wasdev/updates/bluemixAdapter/oxygen/p2.index failed on Connection timed out: connect. Retry attempt 0 started
+!STACK 0
+java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.eclipse.ecf.internal.provider.filetransfer.httpclient4.ECFHttpClientProtocolSocketFactory.connectSocket(ECFHttpClientProtocolSocketFactory.java:86)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:179)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1084)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1075)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1071)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2017-07-31 19:41:14.528
+!MESSAGE Connection to http://www.pramati.com/downloads/eclipse/updates/site.xml failed on Connection timed out: connect. Retry attempt 0 started
+!STACK 0
+java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.eclipse.ecf.internal.provider.filetransfer.httpclient4.ECFHttpClientProtocolSocketFactory.connectSocket(ECFHttpClientProtocolSocketFactory.java:86)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:179)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1084)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1075)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1071)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2017-07-31 19:41:47.533
+!MESSAGE Connection to http://jope.ow2.org/update/jope/site.xml failed on jope.ow2.org. Retry attempt 0 started
+!STACK 0
+java.net.UnknownHostException: jope.ow2.org
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:928)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1323)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1276)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:262)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:161)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1084)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1075)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1071)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2017-07-31 19:41:47.747
+!MESSAGE Connection to http://jope.ow2.org/update/jope/p2.index failed on jope.ow2.org. Retry attempt 0 started
+!STACK 0
+java.net.UnknownHostException: jope.ow2.org
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1280)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:262)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:161)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1084)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1075)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1071)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2017-07-31 19:41:51.489
+!MESSAGE Connection to http://downloads.sourceforge.net/project/sapnweclipse/updates/features/com.sap.netweaver.porta.ide.eclipse.feature_0.4.1.200907211842.jar failed on Connection timed out: connect. Retry attempt 0 started
+!STACK 0
+java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.eclipse.ecf.internal.provider.filetransfer.httpclient4.ECFHttpClientSecureProtocolSocketFactory.performConnection(ECFHttpClientSecureProtocolSocketFactory.java:96)
+	at org.eclipse.ecf.internal.provider.filetransfer.httpclient4.ECFHttpClientSecureProtocolSocketFactory.connectSocket(ECFHttpClientSecureProtocolSocketFactory.java:77)
+	at org.apache.http.conn.scheme.SchemeLayeredSocketFactoryAdaptor2.connectSocket(SchemeLayeredSocketFactoryAdaptor2.java:62)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:179)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:675)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:488)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1084)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1075)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1071)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2017-07-31 19:41:56.753
+!MESSAGE Connection to http://www.pramati.com/downloads/eclipse/updates/p2.index failed on Connection timed out: connect. Retry attempt 0 started
+!STACK 0
+java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.eclipse.ecf.internal.provider.filetransfer.httpclient4.ECFHttpClientProtocolSocketFactory.connectSocket(ECFHttpClientProtocolSocketFactory.java:86)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:179)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1084)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1075)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1071)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2017-07-31 19:41:59.531
+!MESSAGE Connection to http://www.caucho.com/eclipse/site.xml failed on www.caucho.com. Retry attempt 0 started
+!STACK 0
+java.net.UnknownHostException: www.caucho.com
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:928)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1323)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1276)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:262)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:161)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1084)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1075)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1071)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2017-07-31 19:41:59.745
+!MESSAGE Connection to http://www.caucho.com/eclipse/p2.index failed on www.caucho.com. Retry attempt 0 started
+!STACK 0
+java.net.UnknownHostException: www.caucho.com
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1280)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:262)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:161)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1084)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1075)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1071)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2017-07-31 19:42:11.532
+!MESSAGE Connection to http://download.oracle.com/otn_software/oepe/oxygen/site.xml failed on download.oracle.com. Retry attempt 0 started
+!STACK 0
+java.net.UnknownHostException: download.oracle.com
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:928)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1323)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1276)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:262)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:161)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1084)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1075)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1071)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2017-07-31 19:42:11.746
+!MESSAGE Connection to http://download.oracle.com/otn_software/oepe/oxygen/p2.index failed on download.oracle.com. Retry attempt 0 started
+!STACK 0
+java.net.UnknownHostException: download.oracle.com
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1280)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:262)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:161)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1084)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1075)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1071)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2017-07-31 19:42:33.706
+!MESSAGE Connection to http://downloads.sourceforge.net/project/sapnweclipse/updates/features/com.sap.netweaver.porta.ide.eclipse.feature_0.4.1.200907211842.jar failed on Connection timed out: connect. Retry attempt 0 started
+!STACK 0
+java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.eclipse.ecf.internal.provider.filetransfer.httpclient4.ECFHttpClientProtocolSocketFactory.connectSocket(ECFHttpClientProtocolSocketFactory.java:86)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:179)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1084)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1075)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1071)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2017-07-31 19:42:37.460
+!MESSAGE Connection to http://download.jboss.org/jbosstools/updates/webtools/oxygen/site.xml failed on Connection timed out: connect. Retry attempt 0 started
+!STACK 0
+java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.eclipse.ecf.internal.provider.filetransfer.httpclient4.ECFHttpClientProtocolSocketFactory.connectSocket(ECFHttpClientProtocolSocketFactory.java:86)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:179)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1084)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1075)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1071)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2017-07-31 19:43:42.386
+!MESSAGE Connection to http://www.apache.org/dist/geronimo/eclipse/updates/features/org.apache.geronimo.feature_1.1.0.jar failed on Connection timed out: connect. Retry attempt 0 started
+!STACK 0
+java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.eclipse.ecf.internal.provider.filetransfer.httpclient4.ECFHttpClientProtocolSocketFactory.connectSocket(ECFHttpClientProtocolSocketFactory.java:86)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:179)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1084)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1075)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1071)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2017-07-31 19:46:05.688
+!MESSAGE Connection to http://downloads.sourceforge.net/project/sapnweclipse/updates/features/com.sap.netweaver.porta.ide.eclipse.feature_0.6.0.200912021058.jar failed on Remote host closed connection during handshake. Retry attempt 0 started
+!STACK 0
+javax.net.ssl.SSLHandshakeException: Remote host closed connection during handshake
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:992)
+	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1375)
+	at sun.security.ssl.SSLSocketImpl.writeRecord(SSLSocketImpl.java:747)
+	at sun.security.ssl.AppOutputStream.write(AppOutputStream.java:123)
+	at org.apache.http.impl.io.AbstractSessionOutputBuffer.flushBuffer(AbstractSessionOutputBuffer.java:157)
+	at org.apache.http.impl.io.AbstractSessionOutputBuffer.flush(AbstractSessionOutputBuffer.java:164)
+	at org.apache.http.impl.AbstractHttpClientConnection.doFlush(AbstractHttpClientConnection.java:270)
+	at org.apache.http.impl.AbstractHttpClientConnection.flush(AbstractHttpClientConnection.java:275)
+	at org.apache.http.impl.conn.AbstractClientConnAdapter.flush(AbstractClientConnAdapter.java:207)
+	at org.apache.http.protocol.HttpRequestExecutor.doSendRequest(HttpRequestExecutor.java:241)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:123)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:686)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:488)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1084)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1075)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1071)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+Caused by: java.io.EOFException: SSL peer shut down incorrectly
+	at sun.security.ssl.InputRecord.read(InputRecord.java:505)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:973)
+	... 19 more
+!SESSION 2017-08-01 16:59:42.987 -----------------------------------------------
+eclipse.buildId=4.7.0.I20170612-0950
+java.version=1.8.0_131
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pt_BR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-08-01 16:59:58.647
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Mauricio Capua'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 17 2017-08-01 17:00:02.159
+!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: Connect to dev.eclipse.org:443 [dev.eclipse.org/198.41.30.200] failed: connect timed out. ; version: 2.0.5.v20170613-1207
+!STACK 0
+org.apache.http.conn.ConnectTimeoutException: Connect to dev.eclipse.org:443 [dev.eclipse.org/198.41.30.200] failed: connect timed out
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:150)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.http.client.fluent.Request.internalExecute(Request.java:173)
+	at org.apache.http.client.fluent.Executor.execute(Executor.java:262)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.request(IO.java:170)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:64)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:124)
+	at com.google.common.util.concurrent.AbstractIdleService$DelegateService$1.run(AbstractIdleService.java:62)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:122)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:337)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:141)
+	... 17 more
+
+!ENTRY org.eclipse.core.jobs 2 2 2017-08-01 17:00:09.361
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.eclipse.ui.internal.Workbench$40
+!SESSION 2017-08-01 17:00:10.194 -----------------------------------------------
+eclipse.buildId=4.7.0.I20170612-0950
+java.version=1.8.0_131
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pt_BR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-08-01 17:00:21.803
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Mauricio Capua'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 17 2017-08-01 17:00:24.909
+!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: Connect to dev.eclipse.org:443 [dev.eclipse.org/198.41.30.200] failed: connect timed out. ; version: 2.0.5.v20170613-1207
+!STACK 0
+org.apache.http.conn.ConnectTimeoutException: Connect to dev.eclipse.org:443 [dev.eclipse.org/198.41.30.200] failed: connect timed out
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:150)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.http.client.fluent.Request.internalExecute(Request.java:173)
+	at org.apache.http.client.fluent.Executor.execute(Executor.java:262)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.request(IO.java:170)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:64)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:124)
+	at com.google.common.util.concurrent.AbstractIdleService$DelegateService$1.run(AbstractIdleService.java:62)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:122)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:337)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:141)
+	... 17 more
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1002 2017-08-01 17:02:13.974
+!MESSAGE Unable to connect to repository http://download.eclipse.org/tools/orbit/downloads/drops/R20150821153341/repository/content.xml
+!STACK 0
+java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:120)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:179)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:328)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:263)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1002 2017-08-01 17:02:56.003
+!MESSAGE Unable to connect to repository http://download.eclipse.org/releases/oxygen/compositeContent.xml
+!STACK 0
+java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:120)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:179)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:328)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:263)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1002 2017-08-01 17:03:38.032
+!MESSAGE Unable to connect to repository http://download.eclipse.org/oomph/updates/milestone/latest/compositeContent.xml
+!STACK 0
+java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:120)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:179)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:328)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:263)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1002 2017-08-01 17:04:20.064
+!MESSAGE Unable to connect to repository http://download.eclipse.org/eclipse/updates/4.7/compositeContent.xml
+!STACK 0
+java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:120)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:179)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:328)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:263)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1002 2017-08-01 17:05:02.103
+!MESSAGE Unable to connect to repository http://download.eclipse.org/webtools/repository/neon/compositeContent.xml
+!STACK 0
+java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:120)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:179)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:328)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:263)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+!SESSION 2017-08-06 09:20:12.040 -----------------------------------------------
+eclipse.buildId=4.7.0.I20170612-0950
+java.version=1.8.0_131
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pt_BR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-08-06 09:20:24.448
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Mauricio Capua'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.jface.text 2 0 2017-08-06 11:50:46.929
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2017-08-06 11:50:47.021
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.jface.text 2 0 2017-08-06 11:50:47.116
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2017-08-06 11:50:47.117
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+!SESSION 2017-08-07 13:12:50.884 -----------------------------------------------
+eclipse.buildId=4.7.0.I20170612-0950
+java.version=1.8.0_131
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pt_BR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-08-07 13:13:12.508
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Mauricio Capua'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.jface.text 2 0 2017-08-07 13:57:30.482
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2017-08-07 13:57:30.569
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 11 2017-08-07 13:57:31.179
+!MESSAGE The model index service was accessed either before it started or after it finished running.
+!STACK 0
+org.eclipse.recommenders.utils.Logs$LogTraceException
+	at org.eclipse.recommenders.utils.Logs$LogTraceException.newTrace(Logs.java:381)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:134)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:126)
+	at org.eclipse.recommenders.internal.models.rcp.EclipseModelIndex.suggest(EclipseModelIndex.java:211)
+	at org.eclipse.recommenders.models.SimpleModelProvider.acquireModel(SimpleModelProvider.java:70)
+	at org.eclipse.recommenders.models.PoolingModelProvider.access$0(PoolingModelProvider.java:1)
+	at org.eclipse.recommenders.models.PoolingModelProvider$ModelPoolFactoryMediator.makeObject(PoolingModelProvider.java:96)
+	at org.eclipse.recommenders.models.PoolingModelProvider$ModelPoolFactoryMediator.makeObject(PoolingModelProvider.java:1)
+	at org.apache.commons.pool.impl.GenericKeyedObjectPool.borrowObject(GenericKeyedObjectPool.java:1220)
+	at org.eclipse.recommenders.models.PoolingModelProvider.acquireModel(PoolingModelProvider.java:67)
+	at org.eclipse.recommenders.internal.calls.rcp.RcpCallModelProvider.acquireModel(RcpCallModelProvider.java:65)
+	at org.eclipse.recommenders.internal.calls.rcp.RcpCallModelProvider.acquireModel(RcpCallModelProvider.java:1)
+	at org.eclipse.recommenders.internal.models.rcp.PrefetchModelArchiveJob.run(PrefetchModelArchiveJob.java:43)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.jface.text 2 0 2017-08-07 14:04:23.308
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2017-08-07 14:04:23.315
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+!SESSION 2017-08-07 14:30:55.072 -----------------------------------------------
+eclipse.buildId=4.7.0.I20170612-0950
+java.version=1.8.0_131
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pt_BR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-08-07 14:31:16.719
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Mauricio Capua'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.jface.text 2 0 2017-08-07 15:34:01.341
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2017-08-07 15:34:01.388
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.jface.text 2 0 2017-08-07 15:40:39.901
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2017-08-07 15:40:39.905
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 11 2017-08-07 15:40:40.800
+!MESSAGE The model index service was accessed either before it started or after it finished running.
+!STACK 0
+org.eclipse.recommenders.utils.Logs$LogTraceException
+	at org.eclipse.recommenders.utils.Logs$LogTraceException.newTrace(Logs.java:381)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:134)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:126)
+	at org.eclipse.recommenders.internal.models.rcp.EclipseModelIndex.suggest(EclipseModelIndex.java:211)
+	at org.eclipse.recommenders.models.SimpleModelProvider.acquireModel(SimpleModelProvider.java:70)
+	at org.eclipse.recommenders.models.PoolingModelProvider.access$0(PoolingModelProvider.java:1)
+	at org.eclipse.recommenders.models.PoolingModelProvider$ModelPoolFactoryMediator.makeObject(PoolingModelProvider.java:96)
+	at org.eclipse.recommenders.models.PoolingModelProvider$ModelPoolFactoryMediator.makeObject(PoolingModelProvider.java:1)
+	at org.apache.commons.pool.impl.GenericKeyedObjectPool.borrowObject(GenericKeyedObjectPool.java:1220)
+	at org.eclipse.recommenders.models.PoolingModelProvider.acquireModel(PoolingModelProvider.java:67)
+	at org.eclipse.recommenders.internal.calls.rcp.RcpCallModelProvider.acquireModel(RcpCallModelProvider.java:65)
+	at org.eclipse.recommenders.internal.calls.rcp.RcpCallModelProvider.acquireModel(RcpCallModelProvider.java:1)
+	at org.eclipse.recommenders.internal.models.rcp.PrefetchModelArchiveJob.run(PrefetchModelArchiveJob.java:43)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+!SESSION 2017-08-07 17:08:47.279 -----------------------------------------------
+eclipse.buildId=4.7.0.I20170612-0950
+java.version=1.8.0_131
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pt_BR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-08-07 17:11:18.350
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Mauricio Capua'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.core.jobs 4 2 2017-08-07 17:11:45.291
+!MESSAGE An internal error occurred during: "Load index:/org.eclipse.projects.setup".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.emf.ecore.impl.EStructuralFeatureImpl.getSettingDelegate(EStructuralFeatureImpl.java:845)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eSettingDelegate(BasicEObjectImpl.java:1565)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eDynamicIsSet(BasicEObjectImpl.java:1275)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eIsSet(BasicEObjectImpl.java:1257)
+	at org.eclipse.oomph.base.impl.ModelElementImpl.eIsSet(ModelElementImpl.java:209)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eIsSet(BasicEObjectImpl.java:1241)
+	at org.eclipse.emf.ecore.util.EContentsEList$FeatureIteratorImpl.hasNext(EContentsEList.java:437)
+	at org.eclipse.emf.common.util.AbstractTreeIterator.next(AbstractTreeIterator.java:139)
+	at org.eclipse.oomph.setup.internal.core.util.ResourceMirror$LoadJob.visit(ResourceMirror.java:275)
+	at org.eclipse.oomph.setup.internal.core.util.ResourceMirror$LoadJob.perform(ResourceMirror.java:246)
+	at org.eclipse.oomph.util.WorkerPool$Worker.run(WorkerPool.java:428)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.core.jobs 4 2 2017-08-07 17:11:45.324
+!MESSAGE An internal error occurred during: "Load https://raw.githubusercontent.com/m2e-code-quality/m2e-code-quality/master/m2e-code-quality.setup".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.emf.ecore.impl.EStructuralFeatureImpl.getSettingDelegate(EStructuralFeatureImpl.java:845)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eSettingDelegate(BasicEObjectImpl.java:1565)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eDynamicIsSet(BasicEObjectImpl.java:1275)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eIsSet(BasicEObjectImpl.java:1257)
+	at org.eclipse.oomph.base.impl.ModelElementImpl.eIsSet(ModelElementImpl.java:209)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eIsSet(BasicEObjectImpl.java:1241)
+	at org.eclipse.emf.ecore.util.EContentsEList$FeatureIteratorImpl.hasNext(EContentsEList.java:437)
+	at org.eclipse.emf.ecore.util.EContentsEList$FeatureIteratorImpl.next(EContentsEList.java:595)
+	at org.eclipse.emf.common.util.AbstractTreeIterator.next(AbstractTreeIterator.java:133)
+	at org.eclipse.oomph.setup.internal.core.util.ResourceMirror$LoadJob.visit(ResourceMirror.java:275)
+	at org.eclipse.oomph.setup.internal.core.util.ResourceMirror$LoadJob.perform(ResourceMirror.java:246)
+	at org.eclipse.oomph.util.WorkerPool$Worker.run(WorkerPool.java:428)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.core.jobs 4 2 2017-08-07 17:11:45.325
+!MESSAGE An internal error occurred during: "Load https://raw.githubusercontent.com/LorenzoBettini/javamm/master/javamm.workspace/Javamm.setup".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.emf.ecore.impl.EStructuralFeatureImpl.getSettingDelegate(EStructuralFeatureImpl.java:845)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eSettingDelegate(BasicEObjectImpl.java:1565)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eDynamicIsSet(BasicEObjectImpl.java:1275)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eIsSet(BasicEObjectImpl.java:1257)
+	at org.eclipse.oomph.base.impl.ModelElementImpl.eIsSet(ModelElementImpl.java:209)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eIsSet(BasicEObjectImpl.java:1241)
+	at org.eclipse.emf.ecore.util.EContentsEList$FeatureIteratorImpl.hasNext(EContentsEList.java:437)
+	at org.eclipse.emf.ecore.util.EContentsEList$FeatureIteratorImpl.next(EContentsEList.java:595)
+	at org.eclipse.emf.common.util.AbstractTreeIterator.next(AbstractTreeIterator.java:133)
+	at org.eclipse.oomph.setup.internal.core.util.ResourceMirror$LoadJob.visit(ResourceMirror.java:275)
+	at org.eclipse.oomph.setup.internal.core.util.ResourceMirror$LoadJob.perform(ResourceMirror.java:246)
+	at org.eclipse.oomph.util.WorkerPool$Worker.run(WorkerPool.java:428)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.core.jobs 4 2 2017-08-07 17:11:45.328
+!MESSAGE An internal error occurred during: "Load index:/org.eclipse.projects.setup".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.emf.ecore.impl.EStructuralFeatureImpl.getSettingDelegate(EStructuralFeatureImpl.java:845)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eSettingDelegate(BasicEObjectImpl.java:1565)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eDynamicIsSet(BasicEObjectImpl.java:1275)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eIsSet(BasicEObjectImpl.java:1257)
+	at org.eclipse.oomph.base.impl.ModelElementImpl.eIsSet(ModelElementImpl.java:209)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eIsSet(BasicEObjectImpl.java:1241)
+	at org.eclipse.emf.ecore.util.EContentsEList$FeatureIteratorImpl.hasNext(EContentsEList.java:437)
+	at org.eclipse.emf.common.util.AbstractTreeIterator.next(AbstractTreeIterator.java:139)
+	at org.eclipse.oomph.setup.internal.core.util.ResourceMirror$LoadJob.visit(ResourceMirror.java:275)
+	at org.eclipse.oomph.setup.internal.core.util.ResourceMirror$LoadJob.perform(ResourceMirror.java:246)
+	at org.eclipse.oomph.util.WorkerPool$Worker.run(WorkerPool.java:428)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.core.jobs 4 2 2017-08-07 17:11:45.329
+!MESSAGE An internal error occurred during: "Load https://raw.githubusercontent.com/JanKoehnlein/FXDiagram/master/de.fxdiagram.docs/FXDiagram.setup".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.emf.ecore.impl.EStructuralFeatureImpl.getSettingDelegate(EStructuralFeatureImpl.java:845)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eSettingDelegate(BasicEObjectImpl.java:1565)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eDynamicIsSet(BasicEObjectImpl.java:1275)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eIsSet(BasicEObjectImpl.java:1257)
+	at org.eclipse.oomph.base.impl.ModelElementImpl.eIsSet(ModelElementImpl.java:209)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eIsSet(BasicEObjectImpl.java:1241)
+	at org.eclipse.emf.ecore.util.EContentsEList$FeatureIteratorImpl.hasNext(EContentsEList.java:437)
+	at org.eclipse.emf.ecore.util.EContentsEList$FeatureIteratorImpl.next(EContentsEList.java:595)
+	at org.eclipse.emf.common.util.AbstractTreeIterator.next(AbstractTreeIterator.java:133)
+	at org.eclipse.oomph.setup.internal.core.util.ResourceMirror$LoadJob.visit(ResourceMirror.java:275)
+	at org.eclipse.oomph.setup.internal.core.util.ResourceMirror$LoadJob.perform(ResourceMirror.java:246)
+	at org.eclipse.oomph.util.WorkerPool$Worker.run(WorkerPool.java:428)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.core.jobs 4 2 2017-08-07 17:11:45.332
+!MESSAGE An internal error occurred during: "Load https://raw.githubusercontent.com/m2e-code-quality/m2e-code-quality/master/m2e-code-quality.setup".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.emf.ecore.impl.EStructuralFeatureImpl.getSettingDelegate(EStructuralFeatureImpl.java:845)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eSettingDelegate(BasicEObjectImpl.java:1565)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eDynamicIsSet(BasicEObjectImpl.java:1275)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eIsSet(BasicEObjectImpl.java:1257)
+	at org.eclipse.oomph.base.impl.ModelElementImpl.eIsSet(ModelElementImpl.java:209)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eIsSet(BasicEObjectImpl.java:1241)
+	at org.eclipse.emf.ecore.util.EContentsEList$FeatureIteratorImpl.hasNext(EContentsEList.java:437)
+	at org.eclipse.emf.ecore.util.EContentsEList$FeatureIteratorImpl.next(EContentsEList.java:595)
+	at org.eclipse.emf.common.util.AbstractTreeIterator.next(AbstractTreeIterator.java:133)
+	at org.eclipse.oomph.setup.internal.core.util.ResourceMirror$LoadJob.visit(ResourceMirror.java:275)
+	at org.eclipse.oomph.setup.internal.core.util.ResourceMirror$LoadJob.perform(ResourceMirror.java:246)
+	at org.eclipse.oomph.util.WorkerPool$Worker.run(WorkerPool.java:428)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.core.jobs 4 2 2017-08-07 17:11:45.333
+!MESSAGE An internal error occurred during: "Load https://raw.githubusercontent.com/LorenzoBettini/jbase/master/jbase.workspace/Jbase.setup".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.emf.ecore.impl.EStructuralFeatureImpl.getSettingDelegate(EStructuralFeatureImpl.java:845)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eSettingDelegate(BasicEObjectImpl.java:1565)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eDynamicIsSet(BasicEObjectImpl.java:1275)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eIsSet(BasicEObjectImpl.java:1257)
+	at org.eclipse.oomph.base.impl.ModelElementImpl.eIsSet(ModelElementImpl.java:209)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eIsSet(BasicEObjectImpl.java:1241)
+	at org.eclipse.emf.ecore.util.EContentsEList$FeatureIteratorImpl.hasNext(EContentsEList.java:437)
+	at org.eclipse.emf.ecore.util.EContentsEList$FeatureIteratorImpl.next(EContentsEList.java:595)
+	at org.eclipse.emf.common.util.AbstractTreeIterator.next(AbstractTreeIterator.java:133)
+	at org.eclipse.oomph.setup.internal.core.util.ResourceMirror$LoadJob.visit(ResourceMirror.java:275)
+	at org.eclipse.oomph.setup.internal.core.util.ResourceMirror$LoadJob.perform(ResourceMirror.java:246)
+	at org.eclipse.oomph.util.WorkerPool$Worker.run(WorkerPool.java:428)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.core.jobs 4 2 2017-08-07 17:11:45.388
+!MESSAGE An internal error occurred during: "Load https://raw.githubusercontent.com/LorenzoBettini/javamm/master/javamm.workspace/Javamm.setup".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.emf.ecore.impl.EStructuralFeatureImpl.getSettingDelegate(EStructuralFeatureImpl.java:845)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eSettingDelegate(BasicEObjectImpl.java:1565)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eDynamicIsSet(BasicEObjectImpl.java:1275)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eIsSet(BasicEObjectImpl.java:1257)
+	at org.eclipse.oomph.base.impl.ModelElementImpl.eIsSet(ModelElementImpl.java:209)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eIsSet(BasicEObjectImpl.java:1241)
+	at org.eclipse.emf.ecore.util.EContentsEList$FeatureIteratorImpl.hasNext(EContentsEList.java:437)
+	at org.eclipse.emf.ecore.util.EContentsEList$FeatureIteratorImpl.next(EContentsEList.java:595)
+	at org.eclipse.emf.common.util.AbstractTreeIterator.next(AbstractTreeIterator.java:133)
+	at org.eclipse.oomph.setup.internal.core.util.ResourceMirror$LoadJob.visit(ResourceMirror.java:275)
+	at org.eclipse.oomph.setup.internal.core.util.ResourceMirror$LoadJob.perform(ResourceMirror.java:246)
+	at org.eclipse.oomph.util.WorkerPool$Worker.run(WorkerPool.java:428)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.core.jobs 4 2 2017-08-07 17:11:45.389
+!MESSAGE An internal error occurred during: "Load https://raw.githubusercontent.com/groovy/groovy-eclipse/master/groovy-eclipse.setup".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.emf.ecore.impl.EStructuralFeatureImpl.getSettingDelegate(EStructuralFeatureImpl.java:845)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eSettingDelegate(BasicEObjectImpl.java:1565)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eDynamicIsSet(BasicEObjectImpl.java:1275)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eIsSet(BasicEObjectImpl.java:1257)
+	at org.eclipse.oomph.base.impl.ModelElementImpl.eIsSet(ModelElementImpl.java:209)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eIsSet(BasicEObjectImpl.java:1241)
+	at org.eclipse.emf.ecore.util.EContentsEList$FeatureIteratorImpl.hasNext(EContentsEList.java:437)
+	at org.eclipse.emf.ecore.util.EContentsEList$FeatureIteratorImpl.next(EContentsEList.java:595)
+	at org.eclipse.emf.common.util.AbstractTreeIterator.next(AbstractTreeIterator.java:133)
+	at org.eclipse.oomph.setup.internal.core.util.ResourceMirror$LoadJob.visit(ResourceMirror.java:275)
+	at org.eclipse.oomph.setup.internal.core.util.ResourceMirror$LoadJob.perform(ResourceMirror.java:246)
+	at org.eclipse.oomph.util.WorkerPool$Worker.run(WorkerPool.java:428)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.core.jobs 4 2 2017-08-07 17:11:45.390
+!MESSAGE An internal error occurred during: "Load https://raw.githubusercontent.com/JanKoehnlein/FXDiagram/master/de.fxdiagram.docs/FXDiagram.setup".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.emf.ecore.impl.EStructuralFeatureImpl.getSettingDelegate(EStructuralFeatureImpl.java:845)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eSettingDelegate(BasicEObjectImpl.java:1565)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eDynamicIsSet(BasicEObjectImpl.java:1275)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eIsSet(BasicEObjectImpl.java:1257)
+	at org.eclipse.oomph.base.impl.ModelElementImpl.eIsSet(ModelElementImpl.java:209)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eIsSet(BasicEObjectImpl.java:1241)
+	at org.eclipse.emf.ecore.util.EContentsEList$FeatureIteratorImpl.hasNext(EContentsEList.java:437)
+	at org.eclipse.emf.ecore.util.EContentsEList$FeatureIteratorImpl.next(EContentsEList.java:595)
+	at org.eclipse.emf.common.util.AbstractTreeIterator.next(AbstractTreeIterator.java:133)
+	at org.eclipse.oomph.setup.internal.core.util.ResourceMirror$LoadJob.visit(ResourceMirror.java:275)
+	at org.eclipse.oomph.setup.internal.core.util.ResourceMirror$LoadJob.perform(ResourceMirror.java:246)
+	at org.eclipse.oomph.util.WorkerPool$Worker.run(WorkerPool.java:428)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.core.jobs 4 2 2017-08-07 17:11:45.391
+!MESSAGE An internal error occurred during: "Load https://raw.githubusercontent.com/LorenzoBettini/xsemantics/master/devtools/it.xsemantics.workspace/Xsemantics.setup".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.emf.ecore.impl.EStructuralFeatureImpl.getSettingDelegate(EStructuralFeatureImpl.java:845)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eSettingDelegate(BasicEObjectImpl.java:1565)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eDynamicIsSet(BasicEObjectImpl.java:1275)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eIsSet(BasicEObjectImpl.java:1257)
+	at org.eclipse.oomph.base.impl.ModelElementImpl.eIsSet(ModelElementImpl.java:209)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eIsSet(BasicEObjectImpl.java:1241)
+	at org.eclipse.emf.ecore.util.EContentsEList$FeatureIteratorImpl.hasNext(EContentsEList.java:437)
+	at org.eclipse.emf.ecore.util.EContentsEList$FeatureIteratorImpl.next(EContentsEList.java:595)
+	at org.eclipse.emf.common.util.AbstractTreeIterator.next(AbstractTreeIterator.java:133)
+	at org.eclipse.oomph.setup.internal.core.util.ResourceMirror$LoadJob.visit(ResourceMirror.java:275)
+	at org.eclipse.oomph.setup.internal.core.util.ResourceMirror$LoadJob.perform(ResourceMirror.java:246)
+	at org.eclipse.oomph.util.WorkerPool$Worker.run(WorkerPool.java:428)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.core.jobs 4 2 2017-08-07 17:11:45.391
+!MESSAGE An internal error occurred during: "Load https://raw.githubusercontent.com/LorenzoBettini/jbase/master/jbase.workspace/Jbase.setup".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.emf.ecore.impl.EStructuralFeatureImpl.getSettingDelegate(EStructuralFeatureImpl.java:845)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eSettingDelegate(BasicEObjectImpl.java:1565)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eDynamicIsSet(BasicEObjectImpl.java:1275)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eIsSet(BasicEObjectImpl.java:1257)
+	at org.eclipse.oomph.base.impl.ModelElementImpl.eIsSet(ModelElementImpl.java:209)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eIsSet(BasicEObjectImpl.java:1241)
+	at org.eclipse.emf.ecore.util.EContentsEList$FeatureIteratorImpl.hasNext(EContentsEList.java:437)
+	at org.eclipse.emf.ecore.util.EContentsEList$FeatureIteratorImpl.next(EContentsEList.java:595)
+	at org.eclipse.emf.common.util.AbstractTreeIterator.next(AbstractTreeIterator.java:133)
+	at org.eclipse.oomph.setup.internal.core.util.ResourceMirror$LoadJob.visit(ResourceMirror.java:275)
+	at org.eclipse.oomph.setup.internal.core.util.ResourceMirror$LoadJob.perform(ResourceMirror.java:246)
+	at org.eclipse.oomph.util.WorkerPool$Worker.run(WorkerPool.java:428)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.core.jobs 4 2 2017-08-07 17:11:45.499
+!MESSAGE An internal error occurred during: "Resolver".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.emf.ecore.impl.EStructuralFeatureImpl.getSettingDelegate(EStructuralFeatureImpl.java:845)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eSettingDelegate(BasicEObjectImpl.java:1565)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eGet(BasicEObjectImpl.java:1027)
+	at org.eclipse.oomph.base.impl.ModelElementImpl.eGet(ModelElementImpl.java:157)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eGet(BasicEObjectImpl.java:1011)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eGet(BasicEObjectImpl.java:1003)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eGet(BasicEObjectImpl.java:998)
+	at org.eclipse.oomph.setup.internal.core.util.ProxyResolver$ResolveJob.visit(ProxyResolver.java:147)
+	at org.eclipse.oomph.setup.internal.core.util.ProxyResolver$ResolveJob.visit(ProxyResolver.java:219)
+	at org.eclipse.oomph.setup.internal.core.util.ProxyResolver$ResolveJob.visit(ProxyResolver.java:219)
+	at org.eclipse.oomph.setup.internal.core.util.ProxyResolver$ResolveJob.perform(ProxyResolver.java:129)
+	at org.eclipse.oomph.util.WorkerPool$Worker.run(WorkerPool.java:428)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.core.jobs 4 2 2017-08-07 17:11:45.511
+!MESSAGE An internal error occurred during: "Resolver".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.emf.ecore.impl.EStructuralFeatureImpl.getSettingDelegate(EStructuralFeatureImpl.java:845)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eSettingDelegate(BasicEObjectImpl.java:1565)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eGet(BasicEObjectImpl.java:1027)
+	at org.eclipse.oomph.base.impl.ModelElementImpl.eGet(ModelElementImpl.java:157)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eGet(BasicEObjectImpl.java:1011)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eGet(BasicEObjectImpl.java:1003)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eGet(BasicEObjectImpl.java:998)
+	at org.eclipse.oomph.setup.internal.core.util.ProxyResolver$ResolveJob.visit(ProxyResolver.java:147)
+	at org.eclipse.oomph.setup.internal.core.util.ProxyResolver$ResolveJob.visit(ProxyResolver.java:219)
+	at org.eclipse.oomph.setup.internal.core.util.ProxyResolver$ResolveJob.visit(ProxyResolver.java:219)
+	at org.eclipse.oomph.setup.internal.core.util.ProxyResolver$ResolveJob.perform(ProxyResolver.java:129)
+	at org.eclipse.oomph.util.WorkerPool$Worker.run(WorkerPool.java:428)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.core.jobs 4 2 2017-08-07 17:11:45.515
+!MESSAGE An internal error occurred during: "Resolver".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.emf.ecore.impl.EStructuralFeatureImpl.getSettingDelegate(EStructuralFeatureImpl.java:845)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eSettingDelegate(BasicEObjectImpl.java:1565)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eGet(BasicEObjectImpl.java:1027)
+	at org.eclipse.oomph.base.impl.ModelElementImpl.eGet(ModelElementImpl.java:157)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eGet(BasicEObjectImpl.java:1011)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eGet(BasicEObjectImpl.java:1003)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eGet(BasicEObjectImpl.java:998)
+	at org.eclipse.oomph.setup.internal.core.util.ProxyResolver$ResolveJob.visit(ProxyResolver.java:147)
+	at org.eclipse.oomph.setup.internal.core.util.ProxyResolver$ResolveJob.visit(ProxyResolver.java:219)
+	at org.eclipse.oomph.setup.internal.core.util.ProxyResolver$ResolveJob.visit(ProxyResolver.java:219)
+	at org.eclipse.oomph.setup.internal.core.util.ProxyResolver$ResolveJob.perform(ProxyResolver.java:129)
+	at org.eclipse.oomph.util.WorkerPool$Worker.run(WorkerPool.java:428)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.core.jobs 4 2 2017-08-07 17:11:45.517
+!MESSAGE An internal error occurred during: "Resolver".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.emf.ecore.impl.EStructuralFeatureImpl.getSettingDelegate(EStructuralFeatureImpl.java:845)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eSettingDelegate(BasicEObjectImpl.java:1565)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eGet(BasicEObjectImpl.java:1027)
+	at org.eclipse.oomph.base.impl.ModelElementImpl.eGet(ModelElementImpl.java:157)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eGet(BasicEObjectImpl.java:1011)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eGet(BasicEObjectImpl.java:1003)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eGet(BasicEObjectImpl.java:998)
+	at org.eclipse.oomph.setup.internal.core.util.ProxyResolver$ResolveJob.visit(ProxyResolver.java:147)
+	at org.eclipse.oomph.setup.internal.core.util.ProxyResolver$ResolveJob.visit(ProxyResolver.java:219)
+	at org.eclipse.oomph.setup.internal.core.util.ProxyResolver$ResolveJob.visit(ProxyResolver.java:219)
+	at org.eclipse.oomph.setup.internal.core.util.ProxyResolver$ResolveJob.perform(ProxyResolver.java:129)
+	at org.eclipse.oomph.util.WorkerPool$Worker.run(WorkerPool.java:428)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.core.jobs 4 2 2017-08-07 17:11:45.521
+!MESSAGE An internal error occurred during: "Resolver".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.emf.ecore.impl.EStructuralFeatureImpl.getSettingDelegate(EStructuralFeatureImpl.java:845)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eSettingDelegate(BasicEObjectImpl.java:1565)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eGet(BasicEObjectImpl.java:1027)
+	at org.eclipse.oomph.base.impl.ModelElementImpl.eGet(ModelElementImpl.java:157)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eGet(BasicEObjectImpl.java:1011)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eGet(BasicEObjectImpl.java:1003)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eGet(BasicEObjectImpl.java:998)
+	at org.eclipse.oomph.setup.internal.core.util.ProxyResolver$ResolveJob.visit(ProxyResolver.java:147)
+	at org.eclipse.oomph.setup.internal.core.util.ProxyResolver$ResolveJob.visit(ProxyResolver.java:219)
+	at org.eclipse.oomph.setup.internal.core.util.ProxyResolver$ResolveJob.visit(ProxyResolver.java:219)
+	at org.eclipse.oomph.setup.internal.core.util.ProxyResolver$ResolveJob.perform(ProxyResolver.java:129)
+	at org.eclipse.oomph.util.WorkerPool$Worker.run(WorkerPool.java:428)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.core.jobs 4 2 2017-08-07 17:11:45.524
+!MESSAGE An internal error occurred during: "Resolver".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.emf.ecore.impl.EStructuralFeatureImpl.getSettingDelegate(EStructuralFeatureImpl.java:845)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eSettingDelegate(BasicEObjectImpl.java:1565)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eGet(BasicEObjectImpl.java:1027)
+	at org.eclipse.oomph.base.impl.ModelElementImpl.eGet(ModelElementImpl.java:157)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eGet(BasicEObjectImpl.java:1011)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eGet(BasicEObjectImpl.java:1003)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eGet(BasicEObjectImpl.java:998)
+	at org.eclipse.oomph.setup.internal.core.util.ProxyResolver$ResolveJob.visit(ProxyResolver.java:147)
+	at org.eclipse.oomph.setup.internal.core.util.ProxyResolver$ResolveJob.visit(ProxyResolver.java:219)
+	at org.eclipse.oomph.setup.internal.core.util.ProxyResolver$ResolveJob.visit(ProxyResolver.java:219)
+	at org.eclipse.oomph.setup.internal.core.util.ProxyResolver$ResolveJob.perform(ProxyResolver.java:129)
+	at org.eclipse.oomph.util.WorkerPool$Worker.run(WorkerPool.java:428)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.core.jobs 4 2 2017-08-07 17:11:45.525
+!MESSAGE An internal error occurred during: "Resolver".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.emf.ecore.impl.EStructuralFeatureImpl.getSettingDelegate(EStructuralFeatureImpl.java:845)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eSettingDelegate(BasicEObjectImpl.java:1565)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eGet(BasicEObjectImpl.java:1027)
+	at org.eclipse.oomph.base.impl.ModelElementImpl.eGet(ModelElementImpl.java:157)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eGet(BasicEObjectImpl.java:1011)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eGet(BasicEObjectImpl.java:1003)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eGet(BasicEObjectImpl.java:998)
+	at org.eclipse.oomph.setup.internal.core.util.ProxyResolver$ResolveJob.visit(ProxyResolver.java:147)
+	at org.eclipse.oomph.setup.internal.core.util.ProxyResolver$ResolveJob.visit(ProxyResolver.java:219)
+	at org.eclipse.oomph.setup.internal.core.util.ProxyResolver$ResolveJob.visit(ProxyResolver.java:219)
+	at org.eclipse.oomph.setup.internal.core.util.ProxyResolver$ResolveJob.perform(ProxyResolver.java:129)
+	at org.eclipse.oomph.util.WorkerPool$Worker.run(WorkerPool.java:428)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.core.jobs 4 2 2017-08-07 17:11:45.734
+!MESSAGE An internal error occurred during: "Resolver".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.emf.ecore.impl.EStructuralFeatureImpl.getSettingDelegate(EStructuralFeatureImpl.java:845)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eSettingDelegate(BasicEObjectImpl.java:1565)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eGet(BasicEObjectImpl.java:1027)
+	at org.eclipse.oomph.base.impl.ModelElementImpl.eGet(ModelElementImpl.java:157)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eGet(BasicEObjectImpl.java:1011)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eGet(BasicEObjectImpl.java:1003)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eGet(BasicEObjectImpl.java:998)
+	at org.eclipse.oomph.setup.internal.core.util.ProxyResolver$ResolveJob.visit(ProxyResolver.java:147)
+	at org.eclipse.oomph.setup.internal.core.util.ProxyResolver$ResolveJob.visit(ProxyResolver.java:219)
+	at org.eclipse.oomph.setup.internal.core.util.ProxyResolver$ResolveJob.visit(ProxyResolver.java:219)
+	at org.eclipse.oomph.setup.internal.core.util.ProxyResolver$ResolveJob.perform(ProxyResolver.java:129)
+	at org.eclipse.oomph.util.WorkerPool$Worker.run(WorkerPool.java:428)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.core.jobs 4 2 2017-08-07 17:11:45.745
+!MESSAGE An internal error occurred during: "Resolver".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.emf.ecore.impl.EStructuralFeatureImpl.getSettingDelegate(EStructuralFeatureImpl.java:845)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eSettingDelegate(BasicEObjectImpl.java:1565)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eGet(BasicEObjectImpl.java:1027)
+	at org.eclipse.oomph.base.impl.ModelElementImpl.eGet(ModelElementImpl.java:157)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eGet(BasicEObjectImpl.java:1011)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eGet(BasicEObjectImpl.java:1003)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eGet(BasicEObjectImpl.java:998)
+	at org.eclipse.oomph.setup.internal.core.util.ProxyResolver$ResolveJob.visit(ProxyResolver.java:147)
+	at org.eclipse.oomph.setup.internal.core.util.ProxyResolver$ResolveJob.visit(ProxyResolver.java:219)
+	at org.eclipse.oomph.setup.internal.core.util.ProxyResolver$ResolveJob.visit(ProxyResolver.java:219)
+	at org.eclipse.oomph.setup.internal.core.util.ProxyResolver$ResolveJob.perform(ProxyResolver.java:129)
+	at org.eclipse.oomph.util.WorkerPool$Worker.run(WorkerPool.java:428)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.core.jobs 4 2 2017-08-07 17:11:45.746
+!MESSAGE An internal error occurred during: "Resolver".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.emf.ecore.impl.EStructuralFeatureImpl.getSettingDelegate(EStructuralFeatureImpl.java:845)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eSettingDelegate(BasicEObjectImpl.java:1565)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eGet(BasicEObjectImpl.java:1027)
+	at org.eclipse.oomph.base.impl.ModelElementImpl.eGet(ModelElementImpl.java:157)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eGet(BasicEObjectImpl.java:1011)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eGet(BasicEObjectImpl.java:1003)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eGet(BasicEObjectImpl.java:998)
+	at org.eclipse.oomph.setup.internal.core.util.ProxyResolver$ResolveJob.visit(ProxyResolver.java:147)
+	at org.eclipse.oomph.setup.internal.core.util.ProxyResolver$ResolveJob.visit(ProxyResolver.java:219)
+	at org.eclipse.oomph.setup.internal.core.util.ProxyResolver$ResolveJob.visit(ProxyResolver.java:219)
+	at org.eclipse.oomph.setup.internal.core.util.ProxyResolver$ResolveJob.perform(ProxyResolver.java:129)
+	at org.eclipse.oomph.util.WorkerPool$Worker.run(WorkerPool.java:428)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.core.jobs 4 2 2017-08-07 17:11:45.752
+!MESSAGE An internal error occurred during: "Resolver".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.emf.ecore.impl.EStructuralFeatureImpl.getSettingDelegate(EStructuralFeatureImpl.java:845)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eSettingDelegate(BasicEObjectImpl.java:1565)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eGet(BasicEObjectImpl.java:1027)
+	at org.eclipse.oomph.base.impl.ModelElementImpl.eGet(ModelElementImpl.java:157)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eGet(BasicEObjectImpl.java:1011)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eGet(BasicEObjectImpl.java:1003)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eGet(BasicEObjectImpl.java:998)
+	at org.eclipse.oomph.setup.internal.core.util.ProxyResolver$ResolveJob.visit(ProxyResolver.java:147)
+	at org.eclipse.oomph.setup.internal.core.util.ProxyResolver$ResolveJob.visit(ProxyResolver.java:219)
+	at org.eclipse.oomph.setup.internal.core.util.ProxyResolver$ResolveJob.visit(ProxyResolver.java:219)
+	at org.eclipse.oomph.setup.internal.core.util.ProxyResolver$ResolveJob.perform(ProxyResolver.java:129)
+	at org.eclipse.oomph.util.WorkerPool$Worker.run(WorkerPool.java:428)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.core.jobs 4 2 2017-08-07 17:11:45.754
+!MESSAGE An internal error occurred during: "Resolver".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.emf.ecore.impl.EStructuralFeatureImpl.getSettingDelegate(EStructuralFeatureImpl.java:845)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eSettingDelegate(BasicEObjectImpl.java:1565)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eGet(BasicEObjectImpl.java:1027)
+	at org.eclipse.oomph.base.impl.ModelElementImpl.eGet(ModelElementImpl.java:157)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eGet(BasicEObjectImpl.java:1011)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eGet(BasicEObjectImpl.java:1003)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eGet(BasicEObjectImpl.java:998)
+	at org.eclipse.oomph.setup.internal.core.util.ProxyResolver$ResolveJob.visit(ProxyResolver.java:147)
+	at org.eclipse.oomph.setup.internal.core.util.ProxyResolver$ResolveJob.visit(ProxyResolver.java:219)
+	at org.eclipse.oomph.setup.internal.core.util.ProxyResolver$ResolveJob.visit(ProxyResolver.java:219)
+	at org.eclipse.oomph.setup.internal.core.util.ProxyResolver$ResolveJob.perform(ProxyResolver.java:129)
+	at org.eclipse.oomph.util.WorkerPool$Worker.run(WorkerPool.java:428)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.core.jobs 4 2 2017-08-07 17:11:45.758
+!MESSAGE An internal error occurred during: "Resolver".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.emf.ecore.impl.EStructuralFeatureImpl.getSettingDelegate(EStructuralFeatureImpl.java:845)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eSettingDelegate(BasicEObjectImpl.java:1565)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eGet(BasicEObjectImpl.java:1027)
+	at org.eclipse.oomph.base.impl.ModelElementImpl.eGet(ModelElementImpl.java:157)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eGet(BasicEObjectImpl.java:1011)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eGet(BasicEObjectImpl.java:1003)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eGet(BasicEObjectImpl.java:998)
+	at org.eclipse.oomph.setup.internal.core.util.ProxyResolver$ResolveJob.visit(ProxyResolver.java:147)
+	at org.eclipse.oomph.setup.internal.core.util.ProxyResolver$ResolveJob.visit(ProxyResolver.java:219)
+	at org.eclipse.oomph.setup.internal.core.util.ProxyResolver$ResolveJob.visit(ProxyResolver.java:219)
+	at org.eclipse.oomph.setup.internal.core.util.ProxyResolver$ResolveJob.perform(ProxyResolver.java:129)
+	at org.eclipse.oomph.util.WorkerPool$Worker.run(WorkerPool.java:428)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.core.jobs 4 2 2017-08-07 17:11:45.762
+!MESSAGE An internal error occurred during: "Resolver".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.emf.ecore.impl.EStructuralFeatureImpl.getSettingDelegate(EStructuralFeatureImpl.java:845)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eSettingDelegate(BasicEObjectImpl.java:1565)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eGet(BasicEObjectImpl.java:1027)
+	at org.eclipse.oomph.base.impl.ModelElementImpl.eGet(ModelElementImpl.java:157)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eGet(BasicEObjectImpl.java:1011)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eGet(BasicEObjectImpl.java:1003)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eGet(BasicEObjectImpl.java:998)
+	at org.eclipse.oomph.setup.internal.core.util.ProxyResolver$ResolveJob.visit(ProxyResolver.java:147)
+	at org.eclipse.oomph.setup.internal.core.util.ProxyResolver$ResolveJob.visit(ProxyResolver.java:219)
+	at org.eclipse.oomph.setup.internal.core.util.ProxyResolver$ResolveJob.visit(ProxyResolver.java:219)
+	at org.eclipse.oomph.setup.internal.core.util.ProxyResolver$ResolveJob.perform(ProxyResolver.java:129)
+	at org.eclipse.oomph.util.WorkerPool$Worker.run(WorkerPool.java:428)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.jface.text 2 0 2017-08-07 17:33:26.529
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2017-08-07 17:33:26.534
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.jface.text 2 0 2017-08-07 17:53:08.308
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2017-08-07 17:53:08.310
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 11 2017-08-07 17:53:13.752
+!MESSAGE The model index service was accessed either before it started or after it finished running.
+!STACK 0
+org.eclipse.recommenders.utils.Logs$LogTraceException
+	at org.eclipse.recommenders.utils.Logs$LogTraceException.newTrace(Logs.java:381)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:134)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:126)
+	at org.eclipse.recommenders.internal.models.rcp.EclipseModelIndex.suggest(EclipseModelIndex.java:211)
+	at org.eclipse.recommenders.models.SimpleModelProvider.acquireModel(SimpleModelProvider.java:70)
+	at org.eclipse.recommenders.models.PoolingModelProvider.access$0(PoolingModelProvider.java:1)
+	at org.eclipse.recommenders.models.PoolingModelProvider$ModelPoolFactoryMediator.makeObject(PoolingModelProvider.java:96)
+	at org.eclipse.recommenders.models.PoolingModelProvider$ModelPoolFactoryMediator.makeObject(PoolingModelProvider.java:1)
+	at org.apache.commons.pool.impl.GenericKeyedObjectPool.borrowObject(GenericKeyedObjectPool.java:1220)
+	at org.eclipse.recommenders.models.PoolingModelProvider.acquireModel(PoolingModelProvider.java:67)
+	at org.eclipse.recommenders.internal.calls.rcp.RcpCallModelProvider.acquireModel(RcpCallModelProvider.java:65)
+	at org.eclipse.recommenders.internal.calls.rcp.RcpCallModelProvider.acquireModel(RcpCallModelProvider.java:1)
+	at org.eclipse.recommenders.internal.models.rcp.PrefetchModelArchiveJob.run(PrefetchModelArchiveJob.java:43)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.jdt.ui 2 0 2017-08-07 17:53:23.387
+!MESSAGE The 'org.eclipse.recommenders.completion.rcp.javaCompletionProposalComputer.intelligent' proposal computer from the 'org.eclipse.recommenders.completion.rcp' plug-in did not complete normally. The extension took too long to return from the 'computeCompletionProposals()' operation.
+!SESSION 2017-08-11 16:27:52.992 -----------------------------------------------
+eclipse.buildId=4.7.0.I20170612-0950
+java.version=1.8.0_131
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pt_BR
+Framework arguments:  -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -data D:\Meus Documentos\Ifrs\NetBeansProjects\TADS_HOMEWORK\TADS_DESENVOLVIMENTO_WEB3_2017_2 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-08-11 16:28:05.567
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Mauricio Capua'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2017-08-11 16:30:09.144 -----------------------------------------------
+eclipse.buildId=4.7.0.I20170612-0950
+java.version=1.8.0_131
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pt_BR
+Framework arguments:  -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -data D:\Meus Documentos\Ifrs\TADS_WORKSPACE\TADS_HOMEWORK\TADS_DESENVOLVIMENTO_WEB3_2017_2 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-08-11 16:30:20.986
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Mauricio Capua'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.

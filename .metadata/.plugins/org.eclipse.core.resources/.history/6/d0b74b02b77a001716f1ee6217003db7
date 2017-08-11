@@ -1,0 +1,37 @@
+package main;
+
+import java.io.IOException;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class Main {
+
+	public static void main(String[] args) throws IOException {
+		// EncoderJSON encoderJSON = new EncoderJSON();
+		//
+		// String livroJSON = encoderJSON.leituraDosDados();
+		// System.out.println(livroJSON);
+		// String livroMD5 = encoderJSON.mD5ficador(livroJSON);
+		// System.out.println("MD5 é: " + livroMD5);
+		//
+		// try (PrintWriter out = new PrintWriter("livro.txt")) {
+		// out.println(livroJSON);
+		// }
+		// try (PrintWriter out = new PrintWriter("md5.txt")) {
+		// out.println(livroMD5);
+		// }
+
+		List<String> textoCSV = Files.readAllLines(Paths.get("csv.txt"), StandardCharsets.UTF_8);
+		Pattern pattern = Pattern.compile("\"(.*?)\"");
+		Matcher matcher = pattern.matcher(textoCSV.get(0));
+		while (matcher.find()) {
+			System.out.println(matcher.group(1));
+		}
+
+	}
+
+}

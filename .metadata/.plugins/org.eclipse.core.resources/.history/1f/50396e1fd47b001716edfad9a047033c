@@ -1,0 +1,38 @@
+package negocio;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Livro {
+	String codigo;
+	String linguagem;
+	List<Titulo> titulo;
+	String publicacao;
+	String editora;
+	int quantidadeDeAutores;
+	List<String> autores;
+	Capa capa;
+
+	public String getCodigo() {
+		return codigo;
+	}
+
+	public void setCodigo(String codigo) {
+		this.codigo = codigo;
+	}
+
+
+//	public String getLinguagem() {
+//		return linguagem;
+//	}
+//
+//	public void setLinguagem(String linguagem) {
+//		this.linguagem = linguagem;
+//	}
+
+	
+
+	
+
+
+}

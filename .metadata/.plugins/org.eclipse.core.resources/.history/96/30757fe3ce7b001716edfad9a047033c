@@ -1,0 +1,90 @@
+package negocio;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Livro {
+	String codigo;
+	String linguagem;
+	List<String> titulo;
+	String publicacao;
+	String editora;
+	int quantidadeDeAutores;
+	List<String> autores;
+	String formato;
+	String capa;
+
+	public String getCodigo() {
+		return codigo;
+	}
+
+	public void setCodigo(String codigo) {
+		this.codigo = codigo;
+	}
+
+
+	public String getLinguagem() {
+		return linguagem;
+	}
+
+	public void setLinguagem(String linguagem) {
+		this.linguagem = linguagem;
+	}
+
+	public List<String> getTitulo() {
+		return titulo;
+	}
+
+	public void setTitulo(List<String> titulo) {
+		this.titulo = titulo;
+	}
+
+	public String getPublicacao() {
+		return publicacao;
+	}
+
+	public void setPublicacao(String publicacao) {
+		this.publicacao = publicacao;
+	}
+
+	public String getEditora() {
+		return editora;
+	}
+
+	public void setEditora(String editora) {
+		this.editora = editora;
+	}
+
+	public int getQuantidadeDeAutores() {
+		return quantidadeDeAutores;
+	}
+
+	public void setQuantidadeDeAutores(int quantidadeDeAutores) {
+		this.quantidadeDeAutores = quantidadeDeAutores;
+	}
+
+	public List<String> getAutores() {
+		return autores;
+	}
+
+	public void setAutores(List<String> autores) {
+		this.autores = autores;
+	}
+
+	public String getFormato() {
+		return formato;
+	}
+
+	public void setFormato(String formato) {
+		this.formato = formato;
+	}
+
+	public String getCapa() {
+		return capa;
+	}
+
+	public void setCapa(String capa) {
+		this.capa = capa;
+	}
+
+}
