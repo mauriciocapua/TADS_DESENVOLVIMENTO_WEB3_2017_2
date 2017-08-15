@@ -33,11 +33,11 @@ public class EncoderXML {
 			titulos = titulos + escapar(scanner.nextLine()) + "</titulo>";
 		}
 		System.out.println("Digite o dia de publicacao:");
-		String dia = escapar("15");
+		String dia = escapar(scanner.nextLine());
 		System.out.println("Digite o mes de publicacao:");
-		String mes = escapar("06");
+		String mes = escapar(scanner.nextLine());
 		System.out.println("Digite o ano de publicacao:");
-		String ano = escapar("2000");
+		String ano = escapar(scanner.nextLine());
 
 		String publicacao = ano + "-" + mes + "-" + dia;
 

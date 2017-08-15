@@ -1,0 +1,63 @@
+package main;
+
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.OutputStream;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.text.ParseException;
+import java.util.ArrayList;
+import java.util.Base64;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+//import negocio.DecoderJson;
+import negocio.EncoderXML;
+
+public class Main {
+
+	public static void main(String[] args) throws IOException, ParseException{
+		EncoderXML encoderXML = new EncoderXML();
+
+//		String livroXML = encoderXML.leituraDosDados();
+//		System.out.println(livroXML);
+//		String livroMD5 = encoderXML.mD5ficador(livroXML);
+//		System.out.println("MD5: " + livroMD5);
+
+//		try (PrintWriter out = new PrintWriter("livro.xml")) {
+//			out.println(livroXML);
+//		}
+//		try (PrintWriter out = new PrintWriter("md5.txt")) {
+//			out.println(livroMD5);
+//		}
+
+//		List<String> textoJson = Files.readAllLines(Paths.get("textoJson.json"),
+//				 StandardCharsets.UTF_8);
+//		 DecoderJson decoderJson = new DecoderJson();
+//		 decoderJson.readFile();
+		
+//		Teste2 teste = new Teste2();
+//		teste.abrearquivo("textoJson.json");
+		
+		List<String> texto = Files.readAllLines(Paths.get("textoJson.json"), StandardCharsets.UTF_8);
+		List<String> textOut = new ArrayList<>();
+	    Pattern pattern = Pattern.compile("\"(.+?)\"");
+	    Matcher matcher = pattern.matcher(texto.get(0));
+	    List<String> list = new ArrayList<String>();
+	    while (matcher.find()) {
+	         System.out.println(matcher.group(0));
+	         textOut.add(matcher.group(1));
+	         
+	    }
+	    
+	    byte[] data = Base64.getDecoder().decode(textOut.get(textOut.size()-1));
+		try (OutputStream stream = new FileOutputStream("livro."+textOut.get(textOut.size()-2))) {
+		    stream.write(data);
+		}
+		
+	}
+}

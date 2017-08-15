@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<staff>
+	<employee id="100">
+		<firstname>Tom</firstname>
+		<lastname>Hanks</lastname>
+		<salary>2000</salary>
+	</employee>
+	<employee id="101">
+		<firstname>Will</firstname>
+		<lastname>Smith</lastname>
+		<salary>2000</salary>
+	</employee>
+	<employee id="102">
+		<firstname>Albert</firstname>
+		<lastname>Einstein</lastname>
+		<salary>3000</salary>
+	</employee>
+</staff>
+
