@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	elementFormDefault="qualified">
+
+
+	<xsd:element name="carga">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="responsavel" type="xsd:string"
+					minOccurs="1" maxOccurs="1" />
+				<xsd:element name="origem" type="xsd:string" minOccurs="1"
+					maxOccurs="1" />
+				<xsd:element name="container" type="containerType"
+					maxOccurs="unbounded" />
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+
+	<xsd:complexType name="quantidadeType">
+		<xsd:simpleContent>
+			<xsd:extension base="xsd:string">
+				<xsd:attribute name="unidade" type="xsd:string" use="required" />
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+
+	<xsd:complexType name="containerType">
+		<xsd:sequence>
+			<xsd:element name="responsavel" type="xsd:string"
+				minOccurs="1" maxOccurs="1" />
+			<xsd:element name="destino" type="xsd:string" minOccurs="0"
+				maxOccurs="1" />
+
+			<xsd:choice>
+				<xsd:element name="container" type="containerType"
+					maxOccurs="unbounded" />
+				<xsd:sequence>
+					<xsd:element name="produto" type="xsd:string" />
+					<xsd:element name="quantidade" type="quantidadeType" />
+
+					<xsd:element name="valor" type="xsd:string" />
+				</xsd:sequence>
+
+			</xsd:choice>
+		</xsd:sequence>
+		<xsd:attribute name="tipo" type="xsd:string" use="required" />
+		<xsd:attribute name="id" type="xsd:string" use="required" />
+	</xsd:complexType>
+
+
+</xsd:schema>

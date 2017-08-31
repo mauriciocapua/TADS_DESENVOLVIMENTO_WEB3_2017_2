@@ -1,0 +1,72 @@
+<carga>
+	<responsavel>Empresa 1 SA</responsavel>
+	<origem>Rio Grande</origem>
+	<container tipo="caixa" id="1">
+		<responsavel>Empresa 2 SA</responsavel>
+		<destino>São Paulo</destino>
+		<container tipo="caixa" id="2">
+			<responsavel>Empresa 3 SA</responsavel>
+			<produto>sabonete em barra</produto>
+			<quantidade unidade="unidade">30</quantidade>
+			<valor>55.99</valor>
+		</container>
+		<container tipo="caixa" id="3">
+			<responsavel>Empresa 4 SA</responsavel>
+			<container tipo="caixa" id="4">
+				<responsavel>Empresa 4 SA</responsavel>
+				<produto>terra humus</produto>
+				<quantidade unidade="kilo">37.5</quantidade>
+				<valor>96.58</valor>
+			</container>
+			<container tipo="saco" id="5">
+				<responsavel>Empresa 4 SA</responsavel>
+				<produto>uréia</produto>
+				<quantidade unidade="kilo">40.2</quantidade>
+				<valor>113.82</valor>
+			</container>
+		</container>
+	</container>
+	<container tipo="barril" id="6">
+		<responsavel>Empresa 2 SA</responsavel>
+		<destino>Porto Alegre</destino>
+		<produto>vinagre de vinho tinto</produto>
+		<quantidade unidade="litro">200</quantidade>
+		<valor>546.66</valor>
+	</container>
+	<container tipo="caixa refrigerada" id="7">
+		<responsavel>Empresa 2 SA</responsavel>
+		<destino>Porto Alegre</destino>
+		<container tipo="saco" id="8">
+			<responsavel>Empresa 4 SA</responsavel>
+			<produto>carne moída de 2a</produto>
+			<quantidade unidade="kilo">23.6</quantidade>
+			<valor>258.41</valor>
+		</container>
+		<container tipo="caixa" id="9">
+			<responsavel>Empresa 5 SA</responsavel>
+			<produto>1kg de queijo prato</produto>
+			<quantidade unidade="peça">12</quantidade>
+			<valor>96.58</valor>
+		</container>
+	</container>
+</carga>
+
+<!--
+1) Crie o XSD para validar arquivos XML de carga como, mas não limitado a, o exemplo
+	* procurar por "recursive xml definition"
+2) Escreva expressões XPath para mostrar:
+	a) as empresas que possuem caixas sendo transportadas
+	b) quantos produtos estão sendo transportados em sacos
+	c) o valor total da carga
+	d) o valor total sob responsabilidade da Empresa 2 SA
+	e) quantos tipos diferentes de containeres existem na carga
+	f) a quantidade de destinos diferentes dos produtos transportados
+	g) os produtos com destino a Porto Alegre
+	h) os containeres de maior valor total sob a responsabilidade da Empresa 1 SA
+	i) as empresas responsáveis pelos containeres que contenham carne
+	j) as empresas responsáveis pelo produto de maior valor sendo transportado
+	k) os destinos dos produtos de maior valor sendo transportados
+	l) os containeres de primeiro nível de maior valor total
+	m) os containeres de segundo nível de maior valor total
+-->
+
