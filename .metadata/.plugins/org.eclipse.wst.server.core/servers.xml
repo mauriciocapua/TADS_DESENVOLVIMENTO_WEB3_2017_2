@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <servers>
-  <server auto-publish-setting="2" auto-publish-time="1" configuration-id="/Servers/Tomcat v8.5 Server at localhost-config" deployDir="wtpwebapps" hostname="localhost" id="Tomcat v8.5 Server at localhost" name="Tomcat v8.5 Server at localhost" runtime-id="Apache Tomcat v8.5" server-type="org.eclipse.jst.server.tomcat.85" server-type-id="org.eclipse.jst.server.tomcat.85" start-timeout="45" stop-timeout="15" testEnvironment="true" timestamp="0"/>
+  <server auto-publish-setting="1" glassfish.adminserverportnumber="4848" glassfish.debugport="5009" glassfish.domainpath="D:\Meus Documentos\Ifrs\TADS_WORKSPACE\TADS_HOMEWORK\TADS_DESENVOLVIMENTO_WEB3_2017_2\payara-4.1.2.173\glassfish\domains\domain1" glassfish.jarDeploy="true" glassfish.serverportnumber="8080" hostname="localhost" id="payara-4.1.2.173 [domain1]" name="payara-4.1.2.173 [domain1]" runtime-id="payara-4.1.2.173" server-type="glassfish.server" server-type-id="glassfish.server" start-timeout="240" stop-timeout="240" timestamp="11">
+    <list key="modules" value0="Web3_teste18092017::org.eclipse.jst.jee.server:Web3_teste18092017::jst.web::3.1"/>
+  </server>
 </servers>

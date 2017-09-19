@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="Cobaia1ServerEAR">
+        <wb-resource deploy-path="/" source-path="/EarContent" tag="defaultRootSource"/>
+        <dependent-module archiveName="Cobaia1Server.war" deploy-path="/" handle="module:/resource/Cobaia1Server/Cobaia1Server">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="Cobaia1Cliente.war" deploy-path="/" handle="module:/resource/Cobaia1Cliente/Cobaia1Cliente">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="Cobaia2Server.war" deploy-path="/" handle="module:/resource/Cobaia2Server/Cobaia2Server">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+    </wb-module>
+</project-modules>

@@ -2,12 +2,19 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="livro" key="selection"/>
+		<item value="Token" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="User"/>
+			<item value="web3teste_18092017"/>
+			<item value="http://EREBUS:8080/Web3_teste18092017/UserWSService"/>
+			<item value="web3_18092017"/>
+			<item value="Person"/>
+			<item value="local"/>
+			<item value="wsd"/>
 			<item value="student"/>
 			<item value="value"/>
 			<item value="values[[(1-9)]]"/>
@@ -16,10 +23,12 @@
 			<item value="values[]"/>
 			<item value="values[*]"/>
 			<item value="arr"/>
-			<item value="livroJSON"/>
-			<item value="scanner.nextLine()"/>
 		</list>
 		<list key="replacehistory">
+			<item value="Token"/>
+			<item value="web3_teste18092017"/>
+			<item value="web3teste_18092017"/>
+			<item value="User"/>
 			<item value="livro"/>
 			<item value="(scanner.nextLine()"/>
 			<item value="palavra"/>
