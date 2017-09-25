@@ -1,23 +1,29 @@
 package negocio;
 
-import java.sql.Timestamp;
+import java.util.Date;
+
+import org.eclipse.persistence.jpa.jpql.parser.DateTime;
 
 public class Token {
 	private Integer id;
 	private String login;
 	private Boolean status;
-	private Timestamp validade;
-	private Timestamp criacao;
+	private Date criacao;
+	private Date validade;
 
-	public Token() {
-	}
-
-	public Token(Integer id, String login, Boolean status, Timestamp validade, Timestamp criacao) {
+	public Token(Integer id, String login, Boolean status, Date criacao, Date validade) {
 		this.id = id;
 		this.login = login;
 		this.status = status;
-		this.validade = validade;
 		this.criacao = criacao;
+		this.validade = validade;
+	}
+
+	public Token(String login, Boolean status, Date criacao, Date validade) {
+		this.login = login;
+		this.status = status;
+		this.criacao = criacao;
+		this.validade = validade;
 	}
 
 	public Integer getId() {
@@ -44,19 +50,19 @@ public class Token {
 		this.status = status;
 	}
 
-	public Timestamp getValidade() {
+	public Date getValidade() {
 		return validade;
 	}
 
-	public void setValidade(Timestamp validade) {
+	public void setValidade(Date validade) {
 		this.validade = validade;
 	}
 
-	public Timestamp getCriacao() {
+	public Date getCriacao() {
 		return criacao;
 	}
 
-	public void setCriacao(Timestamp criacao) {
+	public void setCriacao(Date criacao) {
 		this.criacao = criacao;
 	}
 

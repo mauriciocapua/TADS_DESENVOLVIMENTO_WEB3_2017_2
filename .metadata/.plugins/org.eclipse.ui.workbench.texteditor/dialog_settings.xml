@@ -2,12 +2,14 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="Token" key="selection"/>
+		<item value="usuario" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="public.user "/>
+			<item value="name"/>
 			<item value="User"/>
 			<item value="web3teste_18092017"/>
 			<item value="http://EREBUS:8080/Web3_teste18092017/UserWSService"/>
@@ -21,10 +23,9 @@
 			<item value="values[(1-9)]]"/>
 			<item value="values[(1-9)]"/>
 			<item value="values[]"/>
-			<item value="values[*]"/>
-			<item value="arr"/>
 		</list>
 		<list key="replacehistory">
+			<item value="usuario"/>
 			<item value="Token"/>
 			<item value="web3_teste18092017"/>
 			<item value="web3teste_18092017"/>
@@ -40,7 +41,7 @@
 		<item value="284" key="DIALOG_WIDTH"/>
 		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
 		<item value="391" key="DIALOG_HEIGHT"/>
-		<item value="712" key="DIALOG_X_ORIGIN"/>
-		<item value="110" key="DIALOG_Y_ORIGIN"/>
+		<item value="1036" key="DIALOG_X_ORIGIN"/>
+		<item value="265" key="DIALOG_Y_ORIGIN"/>
 	</section>
 </section>

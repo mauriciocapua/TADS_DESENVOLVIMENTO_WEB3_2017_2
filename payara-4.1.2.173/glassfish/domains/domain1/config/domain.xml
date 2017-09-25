@@ -467,7 +467,7 @@
   </secure-admin>
   <clusters></clusters>
   <applications>
-    <application deployment-time="1097" context-root="/Web3_teste18092017" object-type="user" name="Web3_teste18092017" location="${com.sun.aas.instanceRootURI}/applications/Web3_teste18092017/">
+    <application deployment-time="801" context-root="/Web3_teste18092017" object-type="user" name="Web3_teste18092017" location="${com.sun.aas.instanceRootURI}/applications/Web3_teste18092017/">
       <property name="archiveType" value="war"></property>
       <property name="keepstate" value="true"></property>
       <property name="appLocation" value="${com.sun.aas.instanceRootURI}/applications/__internal/Web3_teste18092017/Web3_teste18092017.war"></property>
