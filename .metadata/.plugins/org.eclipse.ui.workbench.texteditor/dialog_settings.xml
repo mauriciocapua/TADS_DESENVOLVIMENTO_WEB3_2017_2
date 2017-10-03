@@ -2,12 +2,18 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="usuario" key="selection"/>
+		<item value="dataSource" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="(DataSource) new InitialContext().lookup(&quot;jdbc/web3_teste18092017&quot;)"/>
+			<item value="PersonWS"/>
+			<item value="UserDAO"/>
+			<item value="static public"/>
+			<item value="static public "/>
+			<item value="connection = DriverManager.getConnection(&quot;jdbc:postgresql://localhost/web3_teste18092017&quot;, &quot;postgres&quot;,"/>
 			<item value="public.user "/>
 			<item value="name"/>
 			<item value="User"/>
@@ -17,14 +23,13 @@
 			<item value="Person"/>
 			<item value="local"/>
 			<item value="wsd"/>
-			<item value="student"/>
-			<item value="value"/>
-			<item value="values[[(1-9)]]"/>
-			<item value="values[(1-9)]]"/>
-			<item value="values[(1-9)]"/>
-			<item value="values[]"/>
 		</list>
 		<list key="replacehistory">
+			<item value="dataSource"/>
+			<item value="UserWS"/>
+			<item value="UserDAO"/>
+			<item value="public "/>
+			<item value="connection = dataSource.getConnection();"/>
 			<item value="usuario"/>
 			<item value="Token"/>
 			<item value="web3_teste18092017"/>

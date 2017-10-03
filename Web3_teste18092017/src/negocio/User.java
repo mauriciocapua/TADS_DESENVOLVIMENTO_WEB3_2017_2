@@ -4,14 +4,17 @@ public class User {
 	private Integer id;
 	private String login;
 	private String senha;
+	private Integer version;
 
 	public User() {
 	}
 
-	public User(Integer id, String login, String senha) {
+	public User(Integer id, String login, String senha,Integer version) {
 		this.id = id;
 		this.login = login;
 		this.senha = senha;
+		this.version = version;
+
 	}
 
 	public Integer getId() {
@@ -37,9 +40,13 @@ public class User {
 	public void setSenha(String senha) {
 		this.senha = senha;
 	}
-	
-	
-	
-	
+
+	public Integer getVersion() {
+		return version;
+	}
+
+	public void setVersion(Integer version) {
+		this.version = version;
+	}
 
 }

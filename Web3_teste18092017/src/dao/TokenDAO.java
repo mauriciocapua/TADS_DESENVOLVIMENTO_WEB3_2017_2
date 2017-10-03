@@ -11,19 +11,72 @@ import java.util.List;
 
 import negocio.Token;
 import negocio.User;
+import javax.sql.DataSource;
 
 public class TokenDAO {
 
-	static public List<Token> getValidToken(User user) {
+	private DataSource dataSource = null;
+
+	public TokenDAO(DataSource dataSource) {
+		this.dataSource = dataSource;
+	}
+
+	public Boolean validateToken(Token token) {
+		Connection connection = null;
+		PreparedStatement preparedStatement = null;
+		ResultSet resultSet = null;
+		Boolean verification = false;
+
+		try {
+			connection = dataSource.getConnection();
+			if (connection != null) {
+				preparedStatement = connection.prepareStatement("SELECT * FROM token WHERE id = ?");
+				preparedStatement.setInt(1, token.getId());
+				resultSet = preparedStatement.executeQuery();
+				if (resultSet.next())
+					verification = true;
+				resultSet.close();
+				preparedStatement.close();
+			}
+			connection.close();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return (verification);
+	}
+
+	public Boolean disableToken(Token token) {
+		Connection connection = null;
+		PreparedStatement preparedStatement = null;
+		ResultSet resultSet = null;
+		Boolean verification = false;
+
+		try {
+			connection = dataSource.getConnection();
+			if (connection != null) {
+				preparedStatement = connection.prepareStatement("update token set status=false WHERE id = ?");
+				preparedStatement.setInt(1, token.getId());
+				resultSet = preparedStatement.executeQuery();
+				if (resultSet.next())
+					verification = true;
+				resultSet.close();
+				preparedStatement.close();
+			}
+			connection.close();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return (verification);
+	}
+
+	public List<Token> getValidToken(User user) {
 		Connection connection = null;
 		PreparedStatement preparedStatement = null;
 		ResultSet resultSet = null;
 		List<Token> tokens = new ArrayList<Token>();
 
 		try {
-			Class.forName("org.postgresql.Driver");
-			connection = DriverManager.getConnection("jdbc:postgresql://localhost/web3_teste18092017", "postgres",
-					"123");
+			connection = dataSource.getConnection();
 			if (connection != null) {
 				preparedStatement = connection.prepareStatement(
 						"select * from token where login = ? and status = true and now() >= criacao and now() <= validade");
@@ -43,7 +96,7 @@ public class TokenDAO {
 		return (tokens);
 	}
 
-	public static Token createToken(User user, Token token) throws ClassNotFoundException, SQLException {
+	public Token createToken(User user, Token token) throws ClassNotFoundException, SQLException {
 		/*
 		 * Connection connection = null; PreparedStatement preparedStatement = null;
 		 * ResultSet resultSet = null; Token token = null;
@@ -66,9 +119,7 @@ public class TokenDAO {
 		ResultSet resultSet = null;
 		String query = "insert into token (login, status, criacao, validade) values (?,?,?,?) returning id";
 		try {
-			Class.forName("org.postgresql.Driver");
-			connection = DriverManager.getConnection("jdbc:postgresql://localhost/web3_teste18092017", "postgres",
-					"123");
+			connection = dataSource.getConnection();
 			if (connection != null) {
 
 				preparedStatement = connection.prepareStatement(query);

@@ -12,12 +12,9 @@
 <fullyQualifiedTypeName name="javax.jws.WebResult"/>
 <fullyQualifiedTypeName name="javax.jws.WebParam"/>
 <fullyQualifiedTypeName name="java.util.List"/>
-<fullyQualifiedTypeName name="dao.UserDAO"/>
-<fullyQualifiedTypeName name="negocio.User"/>
 <fullyQualifiedTypeName name="java.sql.Date"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="java.sql.Timestamp"/>
-<fullyQualifiedTypeName name="negocio.Token"/>
 <fullyQualifiedTypeName name="org.eclipse.persistence.jpa.jpql.parser.DateTime"/>
 <fullyQualifiedTypeName name="com.sun.jmx.snmp.Timestamp"/>
 <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
@@ -26,4 +23,15 @@
 <fullyQualifiedTypeName name="java.sql.SQLException"/>
 <fullyQualifiedTypeName name="java.text.ParseException"/>
 <fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="dao.UserDAO"/>
+<fullyQualifiedTypeName name="exceptions.UserAuthenticationException"/>
+<fullyQualifiedTypeName name="exceptions.TokenValidNotFoundException"/>
+<fullyQualifiedTypeName name="negocio.Dado"/>
+<fullyQualifiedTypeName name="negocio.User"/>
+<fullyQualifiedTypeName name="negocio.Token"/>
+<fullyQualifiedTypeName name="dao.TokenDAO"/>
+<fullyQualifiedTypeName name="javax.sql.DataSource"/>
+<fullyQualifiedTypeName name="javax.annotation.Resource"/>
+<fullyQualifiedTypeName name="javax.naming.InitialContext"/>
+<fullyQualifiedTypeName name="java.sql.Statement"/>
 </qualifiedTypeNameHistroy>

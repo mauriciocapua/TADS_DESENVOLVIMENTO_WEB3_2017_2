@@ -94,6 +94,14 @@
 	<section name="BuildPathsPropertyPage">
 		<item value="0" key="pageIndex"/>
 	</section>
+	<section name="nls_accessor_history">
+		<section name="0">
+			<item value="Messages" key="accessorName"/>
+			<item value="=Web3_teste18092017/src&lt;dao" key="bundlePackage"/>
+			<item value="messages.properties" key="bundleName"/>
+			<item value="=Web3_teste18092017/src&lt;dao" key="accessorPackage"/>
+		</section>
+	</section>
 	<section name="completion_proposal_size">
 	</section>
 	<section name="AddGetterSetterDialog">
