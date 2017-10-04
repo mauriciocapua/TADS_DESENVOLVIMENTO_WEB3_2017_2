@@ -20661,3 +20661,163 @@ Compilando o código...
 [2017-10-02T21:45:25.060-0300] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=26 _ThreadName=http-thread-pool::http-listener-1(2)] [timeMillis: 1506991525060] [levelValue: 800] [[
   1]]
 
+[2017-10-03T22:23:08.533-0300] [Payara 4.1] [INFO] [NCLS-LOGGING-00009] [javax.enterprise.logging] [tid: _ThreadID=17 _ThreadName=RunLevelControllerThread-1507080188127] [timeMillis: 1507080188533] [levelValue: 800] [[
+  Running Payara Version: Payara Server  4.1.2.173 #badassfish (build 24)]]
+
+[2017-10-03T22:23:08.535-0300] [Payara 4.1] [INFO] [NCLS-LOGGING-00010] [javax.enterprise.logging] [tid: _ThreadID=17 _ThreadName=RunLevelControllerThread-1507080188127] [timeMillis: 1507080188535] [levelValue: 800] [[
+  Server log file is using Formatter class: com.sun.enterprise.server.logging.ODLLogFormatter]]
+
+[2017-10-03T22:23:10.287-0300] [Payara 4.1] [INFO] [NCLS-SECURITY-01115] [javax.enterprise.system.core.security] [tid: _ThreadID=18 _ThreadName=RunLevelControllerThread-1507080188155] [timeMillis: 1507080190287] [levelValue: 800] [[
+  Realm [admin-realm] of classtype [com.sun.enterprise.security.auth.realm.file.FileRealm] successfully created.]]
+
+[2017-10-03T22:23:10.362-0300] [Payara 4.1] [INFO] [NCLS-SECURITY-01115] [javax.enterprise.system.core.security] [tid: _ThreadID=18 _ThreadName=RunLevelControllerThread-1507080188155] [timeMillis: 1507080190362] [levelValue: 800] [[
+  Realm [file] of classtype [com.sun.enterprise.security.auth.realm.file.FileRealm] successfully created.]]
+
+[2017-10-03T22:23:10.410-0300] [Payara 4.1] [INFO] [NCLS-SECURITY-01115] [javax.enterprise.system.core.security] [tid: _ThreadID=18 _ThreadName=RunLevelControllerThread-1507080188155] [timeMillis: 1507080190410] [levelValue: 800] [[
+  Realm [certificate] of classtype [com.sun.enterprise.security.auth.realm.certificate.CertificateRealm] successfully created.]]
+
+[2017-10-03T22:23:10.563-0300] [Payara 4.1] [INFO] [SEC-SVCS-00100] [javax.enterprise.security.services] [tid: _ThreadID=19 _ThreadName=RunLevelControllerThread-1507080188155] [timeMillis: 1507080190563] [levelValue: 800] [[
+  Authorization Service has successfully initialized.]]
+
+[2017-10-03T22:23:10.803-0300] [Payara 4.1] [INFO] [] [org.glassfish.ha.store.spi.BackingStoreFactoryRegistry] [tid: _ThreadID=18 _ThreadName=RunLevelControllerThread-1507080188155] [timeMillis: 1507080190803] [levelValue: 800] [[
+  Registered org.glassfish.ha.store.adapter.cache.ShoalBackingStoreProxy for persistence-type = replicated in BackingStoreFactoryRegistry]]
+
+[2017-10-03T22:23:10.881-0300] [Payara 4.1] [INFO] [] [org.glassfish.ha.store.spi.BackingStoreFactoryRegistry] [tid: _ThreadID=18 _ThreadName=RunLevelControllerThread-1507080188155] [timeMillis: 1507080190881] [levelValue: 800] [[
+  Registered fish.payara.ha.hazelcast.store.HazelcastBackingStoreFactoryProxy for persistence-type = hazelcast in BackingStoreFactoryRegistry]]
+
+[2017-10-03T22:23:10.882-0300] [Payara 4.1] [INFO] [] [fish.payara.ha.hazelcast.store.HazelcastBackingStoreFactory] [tid: _ThreadID=18 _ThreadName=RunLevelControllerThread-1507080188155] [timeMillis: 1507080190882] [levelValue: 800] [[
+  Registered Hazelcast BackingStoreFactory with persistence-type = hazelcast]]
+
+[2017-10-03T22:23:11.365-0300] [Payara 4.1] [INFO] [NCLS-CORE-00087] [javax.enterprise.system.core] [tid: _ThreadID=16 _ThreadName=RunLevelControllerThread-1507080188124] [timeMillis: 1507080191365] [levelValue: 800] [[
+  Grizzly Framework 2.3.31 started in: 63ms - bound to [/0.0.0.0:8080]]]
+
+[2017-10-03T22:23:11.396-0300] [Payara 4.1] [INFO] [NCLS-CORE-00087] [javax.enterprise.system.core] [tid: _ThreadID=16 _ThreadName=RunLevelControllerThread-1507080188124] [timeMillis: 1507080191396] [levelValue: 800] [[
+  Grizzly Framework 2.3.31 started in: 2ms - bound to [/0.0.0.0:8181]]]
+
+[2017-10-03T22:23:11.402-0300] [Payara 4.1] [INFO] [NCLS-CORE-00087] [javax.enterprise.system.core] [tid: _ThreadID=16 _ThreadName=RunLevelControllerThread-1507080188124] [timeMillis: 1507080191402] [levelValue: 800] [[
+  Grizzly Framework 2.3.31 started in: 2ms - bound to [/0.0.0.0:4848]]]
+
+[2017-10-03T22:23:11.605-0300] [Payara 4.1] [INFO] [NCLS-CORE-00087] [javax.enterprise.system.core] [tid: _ThreadID=19 _ThreadName=RunLevelControllerThread-1507080188155] [timeMillis: 1507080191605] [levelValue: 800] [[
+  Grizzly Framework 2.3.31 started in: 30ms - bound to [/0.0.0.0:3700]]]
+
+[2017-10-03T22:23:12.371-0300] [Payara 4.1] [INFO] [AS-WSMETROGLUE-10010] [javax.enterprise.webservices.metroglue] [tid: _ThreadID=17 _ThreadName=RunLevelControllerThread-1507080188127] [timeMillis: 1507080192371] [levelValue: 800] [[
+  Web service endpoint deployment events listener registered successfully.]]
+
+[2017-10-03T22:23:13.037-0300] [Payara 4.1] [INFO] [NCLS-SECURITY-01002] [javax.enterprise.system.core.security] [tid: _ThreadID=17 _ThreadName=RunLevelControllerThread-1507080188127] [timeMillis: 1507080193037] [levelValue: 800] [[
+  Java security manager is disabled.]]
+
+[2017-10-03T22:23:13.037-0300] [Payara 4.1] [INFO] [NCLS-SECURITY-01010] [javax.enterprise.system.core.security] [tid: _ThreadID=17 _ThreadName=RunLevelControllerThread-1507080188127] [timeMillis: 1507080193037] [levelValue: 800] [[
+  Entering Security Startup Service.]]
+
+[2017-10-03T22:23:13.042-0300] [Payara 4.1] [INFO] [NCLS-SECURITY-01143] [javax.enterprise.system.core.security] [tid: _ThreadID=17 _ThreadName=RunLevelControllerThread-1507080188127] [timeMillis: 1507080193042] [levelValue: 800] [[
+  Loading policy provider com.sun.enterprise.security.provider.PolicyWrapper.]]
+
+[2017-10-03T22:23:13.122-0300] [Payara 4.1] [INFO] [NCLS-SECURITY-01011] [javax.enterprise.system.core.security] [tid: _ThreadID=17 _ThreadName=RunLevelControllerThread-1507080188127] [timeMillis: 1507080193122] [levelValue: 800] [[
+  Security Service(s) started successfully.]]
+
+[2017-10-03T22:23:13.817-0300] [Payara 4.1] [INFO] [AS-WEB-GLUE-00198] [javax.enterprise.web] [tid: _ThreadID=17 _ThreadName=RunLevelControllerThread-1507080188127] [timeMillis: 1507080193817] [levelValue: 800] [[
+  Created HTTP listener http-listener-1 on host/port 0.0.0.0:8080]]
+
+[2017-10-03T22:23:13.826-0300] [Payara 4.1] [INFO] [AS-WEB-GLUE-00198] [javax.enterprise.web] [tid: _ThreadID=17 _ThreadName=RunLevelControllerThread-1507080188127] [timeMillis: 1507080193826] [levelValue: 800] [[
+  Created HTTP listener http-listener-2 on host/port 0.0.0.0:8181]]
+
+[2017-10-03T22:23:13.827-0300] [Payara 4.1] [INFO] [AS-WEB-GLUE-00198] [javax.enterprise.web] [tid: _ThreadID=17 _ThreadName=RunLevelControllerThread-1507080188127] [timeMillis: 1507080193827] [levelValue: 800] [[
+  Created HTTP listener admin-listener on host/port 0.0.0.0:4848]]
+
+[2017-10-03T22:23:13.855-0300] [Payara 4.1] [INFO] [AS-WEB-GLUE-00200] [javax.enterprise.web] [tid: _ThreadID=17 _ThreadName=RunLevelControllerThread-1507080188127] [timeMillis: 1507080193855] [levelValue: 800] [[
+  Created virtual server server]]
+
+[2017-10-03T22:23:13.858-0300] [Payara 4.1] [INFO] [AS-WEB-GLUE-00200] [javax.enterprise.web] [tid: _ThreadID=17 _ThreadName=RunLevelControllerThread-1507080188127] [timeMillis: 1507080193858] [levelValue: 800] [[
+  Created virtual server __asadmin]]
+
+[2017-10-03T22:23:14.132-0300] [Payara 4.1] [INFO] [AS-WEB-CORE-00306] [javax.enterprise.web.core] [tid: _ThreadID=17 _ThreadName=RunLevelControllerThread-1507080188127] [timeMillis: 1507080194132] [levelValue: 800] [[
+  Setting JAAS app name glassfish-web]]
+
+[2017-10-03T22:23:14.133-0300] [Payara 4.1] [INFO] [AS-WEB-GLUE-00201] [javax.enterprise.web] [tid: _ThreadID=17 _ThreadName=RunLevelControllerThread-1507080188127] [timeMillis: 1507080194133] [levelValue: 800] [[
+  Virtual server server loaded default web module ]]
+
+[2017-10-03T22:23:15.772-0300] [Payara 4.1] [INFO] [AS-WSJSR109IMPL-00018] [javax.enterprise.webservices] [tid: _ThreadID=17 _ThreadName=RunLevelControllerThread-1507080188127] [timeMillis: 1507080195772] [levelValue: 800] [[
+  Webservice Endpoint deployed UserWS
+ listening at address at http://EREBUS:8080/Web3_teste18092017/UserWSService.]]
+
+[2017-10-03T22:23:15.785-0300] [Payara 4.1] [INFO] [AS-WSMETROGLUE-10001] [javax.enterprise.webservices.metroglue] [tid: _ThreadID=17 _ThreadName=RunLevelControllerThread-1507080188127] [timeMillis: 1507080195785] [levelValue: 800] [[
+  Loading WS-TX Services. Please wait.]]
+
+[2017-10-03T22:23:16.511-0300] [Payara 4.1] [INFO] [AS-WSJSR109IMPL-00018] [javax.enterprise.webservices] [tid: _ThreadID=17 _ThreadName=RunLevelControllerThread-1507080188127] [timeMillis: 1507080196511] [levelValue: 800] [[
+  Webservice Endpoint deployed RegistrationPortTypeImpl
+ listening at address at http://EREBUS:8080/__wstx-services/RegistrationPortTypeRPC.]]
+
+[2017-10-03T22:23:16.513-0300] [Payara 4.1] [INFO] [AS-WSJSR109IMPL-00018] [javax.enterprise.webservices] [tid: _ThreadID=17 _ThreadName=RunLevelControllerThread-1507080188127] [timeMillis: 1507080196513] [levelValue: 800] [[
+  Webservice Endpoint deployed ParticipantPortTypeImpl
+ listening at address at http://EREBUS:8080/__wstx-services/ParticipantPortType.]]
+
+[2017-10-03T22:23:16.514-0300] [Payara 4.1] [INFO] [AS-WSJSR109IMPL-00018] [javax.enterprise.webservices] [tid: _ThreadID=17 _ThreadName=RunLevelControllerThread-1507080188127] [timeMillis: 1507080196514] [levelValue: 800] [[
+  Webservice Endpoint deployed ParticipantPortTypePortImpl
+ listening at address at http://EREBUS:8080/__wstx-services/ParticipantPortType11.]]
+
+[2017-10-03T22:23:16.516-0300] [Payara 4.1] [INFO] [AS-WSJSR109IMPL-00018] [javax.enterprise.webservices] [tid: _ThreadID=17 _ThreadName=RunLevelControllerThread-1507080188127] [timeMillis: 1507080196516] [levelValue: 800] [[
+  Webservice Endpoint deployed CoordinatorPortTypePortImpl
+ listening at address at http://EREBUS:8080/__wstx-services/CoordinatorPortType11.]]
+
+[2017-10-03T22:23:16.517-0300] [Payara 4.1] [INFO] [AS-WSJSR109IMPL-00018] [javax.enterprise.webservices] [tid: _ThreadID=17 _ThreadName=RunLevelControllerThread-1507080188127] [timeMillis: 1507080196517] [levelValue: 800] [[
+  Webservice Endpoint deployed RegistrationRequesterPortTypePortImpl
+ listening at address at http://EREBUS:8080/__wstx-services/RegistrationRequesterPortType11.]]
+
+[2017-10-03T22:23:16.521-0300] [Payara 4.1] [INFO] [AS-WSJSR109IMPL-00018] [javax.enterprise.webservices] [tid: _ThreadID=17 _ThreadName=RunLevelControllerThread-1507080188127] [timeMillis: 1507080196521] [levelValue: 800] [[
+  Webservice Endpoint deployed CoordinatorPortTypeImpl
+ listening at address at http://EREBUS:8080/__wstx-services/CoordinatorPortType.]]
+
+[2017-10-03T22:23:16.526-0300] [Payara 4.1] [INFO] [AS-WSJSR109IMPL-00018] [javax.enterprise.webservices] [tid: _ThreadID=17 _ThreadName=RunLevelControllerThread-1507080188127] [timeMillis: 1507080196526] [levelValue: 800] [[
+  Webservice Endpoint deployed RegistrationRequesterPortTypeImpl
+ listening at address at http://EREBUS:8080/__wstx-services/RegistrationRequesterPortType.]]
+
+[2017-10-03T22:23:16.528-0300] [Payara 4.1] [INFO] [AS-WSJSR109IMPL-00018] [javax.enterprise.webservices] [tid: _ThreadID=17 _ThreadName=RunLevelControllerThread-1507080188127] [timeMillis: 1507080196528] [levelValue: 800] [[
+  Webservice Endpoint deployed RegistrationPortTypeRPCPortImpl
+ listening at address at http://EREBUS:8080/__wstx-services/RegistrationPortTypeRPC11.]]
+
+[2017-10-03T22:23:23.202-0300] [Payara 4.1] [INFO] [AS-WEB-GLUE-00172] [javax.enterprise.web] [tid: _ThreadID=17 _ThreadName=RunLevelControllerThread-1507080188127] [timeMillis: 1507080203202] [levelValue: 800] [[
+  Loading application [wstx-services] at [/__wstx-services]]]
+
+[2017-10-03T22:23:23.208-0300] [Payara 4.1] [INFO] [AS-WSMETROGLUE-10002] [javax.enterprise.webservices.metroglue] [tid: _ThreadID=17 _ThreadName=RunLevelControllerThread-1507080188127] [timeMillis: 1507080203208] [levelValue: 800] [[
+  WS-TX Services successfully started.]]
+
+[2017-10-03T22:23:23.734-0300] [Payara 4.1] [INFO] [AS-WEB-GLUE-00172] [javax.enterprise.web] [tid: _ThreadID=17 _ThreadName=RunLevelControllerThread-1507080188127] [timeMillis: 1507080203734] [levelValue: 800] [[
+  Loading application [Web3_teste18092017] at [/Web3_teste18092017]]]
+
+[2017-10-03T22:23:23.737-0300] [Payara 4.1] [INFO] [NCLS-CORE-00022] [javax.enterprise.system.core] [tid: _ThreadID=17 _ThreadName=RunLevelControllerThread-1507080188127] [timeMillis: 1507080203737] [levelValue: 800] [[
+  Loading application Web3_teste18092017 done in 12.929 ms]]
+
+[2017-10-03T22:23:23.747-0300] [Payara 4.1] [INFO] [NCLS-CORE-00017] [javax.enterprise.system.core] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1507080203747] [levelValue: 800] [[
+  Payara Server  4.1.2.173 #badassfish (24) startup time : Felix (8.178ms), startup services(15.630ms), total(23.808ms)]]
+
+[2017-10-03T22:23:23.758-0300] [Payara 4.1] [INFO] [] [fish.payara.nucleus.notification.NotificationService] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1507080203758] [levelValue: 800] [[
+  Payara Notification Service bootstrapped with configuration: NotificationExecutionOptions{enabled=true, notifierConfigurationExecutionOptionsList={LOG=LogNotifierConfigurationExecutionOptions{useSeparateLogFile=false} NotifierConfigurationExecutionOptions{notifierType=LOG, enabled=true}}}]]
+
+[2017-10-03T22:23:23.848-0300] [Payara 4.1] [INFO] [] [fish.payara.nucleus.util.CleanupPostBoot] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1507080203848] [levelValue: 800] [[
+  Cleaning JarFileFactory Cache to prevent jar FD leaks]]
+
+[2017-10-03T22:23:24.278-0300] [Payara 4.1] [INFO] [NCLS-CORE-00087] [javax.enterprise.system.core] [tid: _ThreadID=16 _ThreadName=RunLevelControllerThread-1507080188124] [timeMillis: 1507080204278] [levelValue: 800] [[
+  Grizzly Framework 2.3.31 started in: 69ms - bound to [/0.0.0.0:7676]]]
+
+[2017-10-03T22:23:24.542-0300] [Payara 4.1] [INFO] [NCLS-BOOTSTRAP-00027] [javax.enterprise.bootstrap] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1507080204542] [levelValue: 800] [[
+  Registered com.sun.enterprise.glassfish.bootstrap.osgi.EmbeddedOSGiGlassFishImpl@37df14d1 as OSGi service registration: org.apache.felix.framework.ServiceRegistrationImpl@4613311f.]]
+
+[2017-10-03T22:23:25.260-0300] [Payara 4.1] [INFO] [] [org.hibernate.validator.internal.util.Version] [tid: _ThreadID=41 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1507080205260] [levelValue: 800] [[
+  HV000001: Hibernate Validator 5.2.4.Final]]
+
+[2017-10-03T22:23:25.293-0300] [Payara 4.1] [INFO] [NCLS-JMX-00005] [javax.enterprise.system.jmx] [tid: _ThreadID=95 _ThreadName=Thread-16] [timeMillis: 1507080205293] [levelValue: 800] [[
+  JMXStartupService has started JMXConnector on JMXService URL service:jmx:rmi://0.0.0.0:8686/jndi/rmi://0.0.0.0:8686/jmxrmi]]
+
+[2017-10-03T22:23:25.382-0300] [Payara 4.1] [INFO] [] [] [tid: _ThreadID=14 _ThreadName=FelixStartLevel] [timeMillis: 1507080205382] [levelValue: 800] [[
+  D:\Meus Documentos\Ifrs\TADS_WORKSPACE\TADS_HOMEWORK\TADS_DESENVOLVIMENTO_WEB3_2017_2\payara-4.1.2.173\glassfish\domains\domain1\autodeploy\bundles does not exist, please create it.]]
+
+[2017-10-03T22:23:27.783-0300] [Payara 4.1] [INFO] [AS-WSJSR109IMPL-00018] [javax.enterprise.webservices] [tid: _ThreadID=41 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1507080207783] [levelValue: 800] [[
+  Webservice Endpoint deployed UserWS
+ listening at address at http://EREBUS:8080/Web3_teste18092017/UserWSService.]]
+
+[2017-10-03T22:23:28.031-0300] [Payara 4.1] [INFO] [AS-WEB-GLUE-00172] [javax.enterprise.web] [tid: _ThreadID=41 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1507080208031] [levelValue: 800] [[
+  Loading application [Web3_teste18092017] at [/Web3_teste18092017]]]
+
+[2017-10-03T22:23:28.110-0300] [Payara 4.1] [INFO] [] [javax.enterprise.system.core] [tid: _ThreadID=41 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1507080208110] [levelValue: 800] [[
+  Web3_teste18092017 was successfully deployed in 1.618 milliseconds.]]
+

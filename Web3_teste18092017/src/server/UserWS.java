@@ -124,16 +124,16 @@ public class UserWS {
 	
 	@WebMethod
 	@WebResult(name = "dado")
-	public User consulta() throws TokenValidNotFoundException, UserAuthenticationException {
+	public User consultaVersion() throws TokenValidNotFoundException, UserAuthenticationException {
 		User user = new User(1, "mauricio", "123", null);
 		List<Token> token = tokenDAO.getValidToken(user);
 		System.out.println(token.size());
 
 		if (user != null && userDAO.validateUser(user)) {
 			if (tokenDAO.validateToken(token.get(0))) {
-				Dado dado = dadoDAO.getDado(user, token.get(0));
+				User userRetorno = userDAO.user(user);
 				// TokenDAO.disableToken(token.get(0));
-				return dado;
+				return userRetorno;
 			} else
 				throw new TokenValidNotFoundException();
 		} else

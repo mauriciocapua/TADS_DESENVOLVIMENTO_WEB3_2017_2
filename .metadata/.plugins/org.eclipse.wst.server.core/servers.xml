@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <servers>
-  <server auto-publish-setting="1" glassfish.adminserverportnumber="4848" glassfish.debugport="5009" glassfish.domainpath="D:\Meus Documentos\Ifrs\TADS_WORKSPACE\TADS_HOMEWORK\TADS_DESENVOLVIMENTO_WEB3_2017_2\payara-4.1.2.173\glassfish\domains\domain1" glassfish.jarDeploy="true" glassfish.serverportnumber="8080" hostname="localhost" id="payara-4.1.2.173 [domain1]" name="payara-4.1.2.173 [domain1]" runtime-id="payara-4.1.2.173" server-type="glassfish.server" server-type-id="glassfish.server" start-timeout="240" stop-timeout="240" timestamp="35">
+  <server auto-publish-setting="1" glassfish.adminserverportnumber="4848" glassfish.debugport="5009" glassfish.domainpath="D:\Meus Documentos\Ifrs\TADS_WORKSPACE\TADS_HOMEWORK\TADS_DESENVOLVIMENTO_WEB3_2017_2\payara-4.1.2.173\glassfish\domains\domain1" glassfish.jarDeploy="true" glassfish.serverportnumber="8080" hostname="localhost" id="payara-4.1.2.173 [domain1]" name="payara-4.1.2.173 [domain1]" runtime-id="payara-4.1.2.173" server-type="glassfish.server" server-type-id="glassfish.server" start-timeout="240" stop-timeout="240" timestamp="37">
     <list key="modules" value0="Web3_teste18092017::org.eclipse.jst.jee.server:Web3_teste18092017::jst.web::3.1"/>
   </server>
 </servers>
