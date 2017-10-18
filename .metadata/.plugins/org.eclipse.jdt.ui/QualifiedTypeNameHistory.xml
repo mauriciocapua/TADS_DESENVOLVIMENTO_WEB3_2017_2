@@ -8,7 +8,6 @@
 <fullyQualifiedTypeName name="java.io.File"/>
 <fullyQualifiedTypeName name="negocio.Teste2"/>
 <fullyQualifiedTypeName name="java.io.OutputStream"/>
-<fullyQualifiedTypeName name="javax.jws.WebMethod"/>
 <fullyQualifiedTypeName name="javax.jws.WebResult"/>
 <fullyQualifiedTypeName name="javax.jws.WebParam"/>
 <fullyQualifiedTypeName name="java.sql.Date"/>
@@ -36,4 +35,8 @@
 <fullyQualifiedTypeName name="server.ListAll"/>
 <fullyQualifiedTypeName name="server.UserWSService"/>
 <fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="javax.jws.WebService"/>
+<fullyQualifiedTypeName name="javax.jws.WebMethod"/>
+<fullyQualifiedTypeName name="cobaia3server.AuthenticationWS"/>
+<fullyQualifiedTypeName name="cobaia3server.AuthenticationWSService"/>
 </qualifiedTypeNameHistroy>
