@@ -1,0 +1,14 @@
+webservice
+conexao com bd
+validacao de parametros
+autenticacao
+
+login -> cria token
+consumir validacao do usuario e do token
+webservice
+	webmethod Token login(User user)
+	webmethod Integer consulta(User user, Token token)
+
+create table user (id int primary key, varchar(20) login, varchar(20) senha);
+create table token (id int primary key, login varchar(20), status boolean, validade timestamp, criacao timestamp);
+create table dado(userid int references user(id) primary key, numero int);

@@ -1,0 +1,96 @@
+CREATE DATABASE trabalho2;
+\c trabalho2;
+CREATE TABLE usertable (
+ 	userid VARCHAR(32) PRIMARY KEY,
+ 	password VARCHAR(32) NOT NULL);
+
+CREATE TABLE grouptable (	
+ 	userid VARCHAR(32) REFERENCES usertable(userid),
+ 	groupid VARCHAR(20) NOT NULL,
+ 	PRIMARY KEY (userid, groupid) );
+
+INSERT INTO usertable VALUES ('admin', '12345');
+INSERT INTO usertable VALUES ('user', '12345');
+
+INSERT INTO grouptable VALUES ('admin', 'admins');
+INSERT INTO grouptable VALUES ('user', 'users');
+
+CREATE TABLE token(
+		id INTEGER NOT NULL,
+		userid VARCHAR(32) NOT NULL REFERENCES usertable(userid),
+		status BOOLEAN NOT NULL,
+		criacao timestamp without time zone NOT NULL,
+		validade timestamp without time zone NOT NULL
+);
+
+INSERT INTO token VALUES(1,'user', true,'2017-10-15 09:46:06.732','2017-12-25 09:46:06.732');
+INSERT INTO token VALUES(2, 'user', true,'2017-10-15 20:34:03.259', '2017-12-02 20:34:03.259');
+
+CREATE TABLE recurso	 (
+ 	id INTEGER PRIMARY KEY,
+ 	descricao VARCHAR(100) NOT NULL,
+ 	quantidade INTEGER NOT NULL,
+ 	version INTEGER NOT NULL);
+
+INSERT INTO recurso VALUES (1, 'recurso1',5,0);
+INSERT INTO recurso VALUES (2, 'recurso2',30,0);
+
+--------------------------------------------------------------------------
+
+Create pool and data source in Glassfish
+
+asadmin create-jdbc-connection-pool --datasourceclassname org.postgresql.ds.PGConnectionPoolDataSource --restype javax.sql.ConnectionPoolDataSource --property portNumber=5432:password=123:user=postgres:serverName=localhost:databaseName=trabalho2 trabalho2pool
+
+asadmin create-jdbc-resource --connectionpoolid trabalho2pool jdbc/trabalho2
+
+**************************************************
+
+Create JDBCRealm in Glassfish Console
+Firefox
+	http://localhost:4848/
+	Configurations -> server-config -> Security -> Realms -> New...
+		Name: trabalho2realm
+		Class Name: com.sun.enterprise.security.auth.realm.jdbc.JDBCRealm
+		JAAS Context: jdbcRealm
+		JNDI: jdbc/trabalho2
+		User Table: usertable
+		User Name Column: id
+		Password Column: password
+		Group Table: grouptable
+		Group Name Column: groupid
+		Password Encryption Algorithm: 
+		Digest Algorithm: none
+
+**************************************************
+
+<security-constraint>
+		<web-resource-collection>
+			<web-resource-name>paginas autenticadas</web-resource-name>
+			<!-- <description/> -->
+			<url-pattern>/VendasWSService/*</url-pattern>
+			<url-pattern>/UserWSService/listAll</url-pattern>
+			<!-- <http-method>GET</http-method> -->
+			<!-- <http-method>POST</http-method> -->
+		</web-resource-collection>
+		<auth-constraint>
+			<role-name>admin-role</role-name>
+		</auth-constraint>
+	</security-constraint>
+
+	<security-constraint>
+		<web-resource-collection>
+			<web-resource-name>paginas não autenticadas</web-resource-name>
+			<!-- <description/> -->
+			<url-pattern>/UserWSService/*</url-pattern>
+			<!-- <http-method>GET</http-method> -->
+			<!-- <http-method>POST</http-method> -->
+		</web-resource-collection>
+		<auth-constraint>
+			<role-name>user-role</role-name>
+		</auth-constraint>
+	</security-constraint>
+
+	<login-config>
+		<auth-method>BASIC</auth-method>
+		<realm-name>trabalho2realm</realm-name>
+	</login-config>
