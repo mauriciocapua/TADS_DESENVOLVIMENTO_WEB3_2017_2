@@ -1,8 +1,5 @@
 package negocio;
 
-import javax.ws.rs.Path;
-
-@Path("User")
 public class User {
 	private Integer id;
 	private String login;

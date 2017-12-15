@@ -63,7 +63,7 @@ public class MyResource {
 	@Produces(MediaType.APPLICATION_JSON)
 	public User getCustomer(@PathParam("id") int id) {
 		User user = userDAO.getById(id);
-		
+
 		if (user == null) {
 			throw new WebApplicationException(Response.Status.NOT_FOUND);
 		}

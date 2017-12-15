@@ -2,8 +2,6 @@ package negocio;
 
 import java.util.Date;
 
-import org.eclipse.persistence.jpa.jpql.parser.DateTime;
-
 public class Token {
 	private Integer id;
 	private String login;
