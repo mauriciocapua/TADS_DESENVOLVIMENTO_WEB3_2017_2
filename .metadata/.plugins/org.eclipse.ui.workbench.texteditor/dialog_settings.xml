@@ -2,51 +2,22 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="consulta" key="selection"/>
+		<item value="System.out.println(" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
-			<item value="consulta"/>
-			<item value="login"/>
-			<item value="sql"/>
-			<item value="XMLGregorianCalendar"/>
-			<item value="user"/>
-			<item value="item"/>
-			<item value="usuario"/>
-			<item value="token"/>
-			<item value="(DataSource) new InitialContext().lookup(&quot;jdbc/web3_teste18092017&quot;)"/>
-			<item value="PersonWS"/>
-			<item value="UserDAO"/>
-			<item value="static public"/>
-			<item value="static public "/>
-			<item value="connection = DriverManager.getConnection(&quot;jdbc:postgresql://localhost/web3_teste18092017&quot;, &quot;postgres&quot;,"/>
-			<item value="public.user "/>
+			<item value="System.out.println("/>
 		</list>
 		<list key="replacehistory">
-			<item value="userid"/>
-			<item value="Date"/>
-			<item value="recurso"/>
-			<item value="item"/>
-			<item value="dataSource"/>
-			<item value="UserWS"/>
-			<item value="UserDAO"/>
-			<item value="public "/>
-			<item value="connection = dataSource.getConnection();"/>
-			<item value="usuario"/>
-			<item value="Token"/>
-			<item value="web3_teste18092017"/>
-			<item value="web3teste_18092017"/>
-			<item value="User"/>
-			<item value="livro"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item value="284" key="DIALOG_WIDTH"/>
 		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
 		<item value="391" key="DIALOG_HEIGHT"/>
-		<item value="1036" key="DIALOG_X_ORIGIN"/>
-		<item value="265" key="DIALOG_Y_ORIGIN"/>
+		<item value="1069" key="DIALOG_X_ORIGIN"/>
+		<item value="303" key="DIALOG_Y_ORIGIN"/>
 	</section>
 </section>

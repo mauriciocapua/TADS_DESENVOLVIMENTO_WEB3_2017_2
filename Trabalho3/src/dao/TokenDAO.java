@@ -20,6 +20,8 @@ public class TokenDAO {
 	public TokenDAO(DataSource dataSource) {
 		this.dataSource = dataSource;
 	}
+	
+
 
 	public Boolean validateToken(Token token) {
 		Connection connection = null;
@@ -42,6 +44,7 @@ public class TokenDAO {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+		System.out.println(verification);
 		return (verification);
 	}
 

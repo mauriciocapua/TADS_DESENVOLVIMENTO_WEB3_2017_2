@@ -1,21 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
-  <display-name>Trabalho3</display-name>
-  <welcome-file-list>
-    <welcome-file>index.html</welcome-file>
-    <welcome-file>index.htm</welcome-file>
-    <welcome-file>index.jsp</welcome-file>
-    <welcome-file>default.html</welcome-file>
-    <welcome-file>default.htm</welcome-file>
-    <welcome-file>default.jsp</welcome-file>
-  </welcome-file-list>
-  
-  <security-constraint>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	id="WebApp_ID" version="3.1">
+	<display-name>Trabalho3</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+
+	<security-constraint>
 		<web-resource-collection>
 			<web-resource-name>paginas autenticadas</web-resource-name>
-			<url-pattern>/VendasWSService/*</url-pattern>
-			<url-pattern>/AdminWSService/*</url-pattern>
-			<url-pattern>/UserWSService/*</url-pattern>
+			<url-pattern>/rest/privado/*</url-pattern>
+			<url-pattern>/rest/publico/*</url-pattern>
+			<http-method>GET</http-method>
+			<http-method>POST</http-method>
+			<http-method>DELETE</http-method>
+			<http-method>PUT</http-method>
 		</web-resource-collection>
 		<auth-constraint>
 			<role-name>admin-role</role-name>
@@ -25,8 +31,11 @@
 	<security-constraint>
 		<web-resource-collection>
 			<web-resource-name>paginas não autenticadas</web-resource-name>
-			<url-pattern>/UserWSService/*</url-pattern>
-			<url-pattern>/VendasWSService/*</url-pattern>
+			<url-pattern>/rest/publico/*</url-pattern>
+			<http-method>GET</http-method>
+			<http-method>POST</http-method>
+			<http-method>DELETE</http-method>
+			<http-method>PUT</http-method>
 		</web-resource-collection>
 		<auth-constraint>
 			<role-name>user-role</role-name>
@@ -35,7 +44,7 @@
 
 	<login-config>
 		<auth-method>BASIC</auth-method>
-		<realm-name>trabalho2realm</realm-name>
+		<realm-name>trabalho3realm</realm-name>
 	</login-config>
-  
+
 </web-app>

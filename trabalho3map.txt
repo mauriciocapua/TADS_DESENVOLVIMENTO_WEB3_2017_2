@@ -1,0 +1,121 @@
+	DROP DATABASE trabalho3;
+	CREATE DATABASE trabalho3;
+	\c trabalho3;
+
+	CREATE TABLE  escolas (
+		id INTEGER primary key, 
+		nome varchar(200),
+		cep varchar(200),
+		endereco varchar(500),
+		bairro varchar(200),
+		nro varchar(200)
+		);
+
+	INSERT INTO escolas VALUES(1, 'EMEF Admar Correa', '96201390',
+		'General Flores da Cunha','Vila Santa Tereza','116');
+
+	INSERT INTO escolas VALUES(2, 'EMEF Altamir de Lacerda', '96203550',
+		'Dr. Raul Pilla','Vila Bernardete',2099);
+
+	INSERT INTO escolas VALUES(3, 'EMEF Anselmo Dias Lopes', '96203410',
+		'Pedro Carneiro Pereira','Vila Maria',12);
+
+	CREATE TABLE  vagas (
+		id INTEGER primary key,
+		serie INTEGER,
+		quantidade INTEGER,
+		id_escola INTEGER not null REFERENCES escolas(id)
+		);
+
+	INSERT INTO vagas VALUES(1, 1, 40, 1);
+	INSERT INTO vagas VALUES(2, 2, 35, 1);
+	INSERT INTO vagas VALUES(3, 3, 30, 1);
+
+	INSERT INTO vagas VALUES(4, 1, 30, 2);
+	INSERT INTO vagas VALUES(5, 2, 50, 2);
+	INSERT INTO vagas VALUES(6, 3, 30, 2);
+
+	INSERT INTO vagas VALUES(7, 1, 30, 3);
+	INSERT INTO vagas VALUES(8, 2, 40, 3);
+	INSERT INTO vagas VALUES(9, 3, 30, 3);
+
+	CREATE TABLE  periodo (
+		inicio timestamp without time zone NOT NULL,
+		fim timestamp without time zone NOT NULL
+		);
+
+	INSERT into periodo VALUES('2017-02-01 09:46:06.732','2017-03-01 09:46:06.732');
+
+	CREATE TABLE  matriculas (
+		id INTEGER primary key,
+		nome varchar(200),
+		rg varchar(20),
+		nascimento timestamp without time zone NOT NULL,
+		serie varchar(200),
+		cep varchar(200),
+		endereco varchar(500),
+		bairro varchar(200),	
+		nro varchar(20),
+		token INTEGER,
+		data timestamp without time zone,
+		id_escola INTEGER not null REFERENCES escolas(id)
+		);
+
+	INSERT INTO matriculas VALUES (1,'mauricio','6080787358','1992-03-06 09:46:06.732','1','96201090',
+		'Professor Antenor Monteiro','Getulio Vargas','355',1,'2017-10-15 09:46:06.732',1);
+
+	CREATE TABLE usertable (
+		userid VARCHAR(32) PRIMARY KEY,
+		password VARCHAR(32) NOT NULL);
+
+	CREATE TABLE grouptable (	
+		userid VARCHAR(32) REFERENCES usertable(userid),
+		groupid VARCHAR(20) NOT NULL,
+		PRIMARY KEY (userid, groupid) );
+
+	INSERT INTO usertable VALUES ('admin', '12345');
+	INSERT INTO usertable VALUES ('user', '12345');
+
+	INSERT INTO grouptable VALUES ('admin', 'admins');
+	INSERT INTO grouptable VALUES ('user', 'users');
+
+	CREATE TABLE  token(
+		id INTEGER NOT NULL,
+		userid VARCHAR(32) NOT NULL REFERENCES usertable(userid),
+		status BOOLEAN NOT NULL,
+		criacao timestamp without time zone NOT NULL,
+		validade timestamp without time zone NOT NULL
+		);
+
+	INSERT INTO token VALUES(1,'user', true,'2017-10-15 09:46:06.732','2018-12-25 09:46:06.732');
+	INSERT INTO token VALUES(2, 'user', true,'2017-10-15 20:34:03.259', '2018-12-02 20:34:03.259');
+
+-------------------------------------------------------------------------------------
+
+
+Create pool and data source in Glassfish
+
+asadmin create-jdbc-connection-pool --datasourceclassname org.postgresql.ds.PGConnectionPoolDataSource --restype javax.sql.ConnectionPoolDataSource --property portNumber=5432:password=123:user=postgres:serverName=localhost:databaseName=trabalho3 trabalho3pool
+
+asadmin create-jdbc-resource --connectionpoolid trabalho3pool jdbc/trabalho3
+
+**************************************************
+
+Create JDBCRealm in Glassfish Console
+Firefox
+http://localhost:4848/
+Configurations -> server-config -> Security -> Realms -> New...
+Name: trabalho3realm
+Class Name: com.sun.enterprise.security.auth.realm.jdbc.JDBCRealm
+JAAS Context: jdbcRealm
+JNDI: jdbc/trabalho3
+User Table: usertable
+User Name Column: userid
+Password Column: password
+Group Table: grouptable
+Group Name Column: groupid
+Password Encryption Algorithm: 
+Digest Algorithm: none
+
+**************************************************
+
